@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   contentStyleType="text/css"
+   data-diagram-type="CLASS"
+   height="153"
+   preserveAspectRatio="none"
+   version="1.1"
+   viewBox="0 0 323 153"
+   width="323"
+   zoomAndPan="magnify"
+   id="svg7"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="elem_POST /auth/login"
+     transform="translate(-5.338843)">
+    <rect
+       codeLine="11"
+       fill="#f5deb3"
+       height="40.265598"
+       id="POST /auth/login"
+       rx="2.5"
+       ry="2.5"
+       style="stroke:#181818;stroke-width:0.5"
+       width="122.7031"
+       x="7"
+       y="7" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="12px"
+       font-style="italic"
+       lengthAdjust="spacing"
+       textLength="41.584"
+       x="47.559601"
+       y="23.1387"
+       id="text1">«Path»</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="116.7031"
+       x="10"
+       y="38.963902"
+       id="text2">POST /auth/login</text>
+  </g>
+  <g
+     id="elem_POST /photos/upload"
+     transform="translate(-5.338843)">
+    <rect
+       codeLine="14"
+       fill="#f5deb3"
+       height="40.265598"
+       id="POST /photos/upload"
+       rx="2.5"
+       ry="2.5"
+       style="stroke:#181818;stroke-width:0.5"
+       width="152.1387"
+       x="164.28"
+       y="7" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="12px"
+       font-style="italic"
+       lengthAdjust="spacing"
+       textLength="41.584"
+       x="219.5573"
+       y="23.1387"
+       id="text3">«Path»</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="146.1387"
+       x="167.28"
+       y="38.963902"
+       id="text4">POST /photos/upload</text>
+  </g>
+  <g
+     id="elem_GET /photos"
+     transform="translate(73.599764,-49.193625)">
+    <rect
+       codeLine="17"
+       fill="#f5deb3"
+       height="40.265598"
+       id="GET /photos"
+       rx="2.5"
+       ry="2.5"
+       style="stroke:#181818;stroke-width:0.5"
+       width="91.086899"
+       x="22.809999"
+       y="107.26" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="12px"
+       font-style="italic"
+       lengthAdjust="spacing"
+       textLength="41.584"
+       x="47.561501"
+       y="123.3987"
+       id="text5">«Path»</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="85.086899"
+       x="25.809999"
+       y="139.22391"
+       id="text6">GET /photos</text>
+  </g>
+</svg>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="2668695"
+   height="2489142.2"
+   viewBox="0 0 2668695 2489142.2"
+   preserveAspectRatio="xMidYMid"
+   version="1.1"
+   id="svg46"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="g46"
+     transform="translate(-1430406.5,-1034167.9)">
+    <g
+       id="g47"
+       transform="translate(-44.556962,-24.303797)">
+      <path
+         class="link link--control"
+         style="stroke:#808080;stroke-width:2px"
+         d="M 816.89943,1018.8516 1104.638,1131.8513"
+         id="path1" />
+      <path
+         class="link link--control"
+         style="stroke:#808080;stroke-width:2px"
+         d="M 1409.7939,1180.4527 1104.638,1131.8513"
+         id="path2" />
+      <path
+         class="link link--control"
+         style="stroke:#808080;stroke-width:2px"
+         d="M 1179.7701,855.26751 1104.638,1131.8513"
+         id="path3" />
+      <path
+         class="link link--control"
+         style="stroke:#808080;stroke-width:2px"
+         d="m 1023.642,1431.2372 80.996,-299.3859"
+         id="path4" />
+      <path
+         class="link link--control"
+         style="stroke:#808080;stroke-width:2px"
+         d="m 567.12954,933.47304 249.76989,85.37856"
+         id="path5" />
+      <path
+         class="link link--control"
+         style="stroke:#808080;stroke-width:2px"
+         d="m 739.39949,798.60795 77.49994,220.24365"
+         id="path6" />
+      <path
+         class="link link--control"
+         style="stroke:#808080;stroke-width:2px"
+         d="M 625.80211,1143.0905 816.89943,1018.8516"
+         id="path7" />
+      <path
+         class="link link--control"
+         style="stroke:#808080;stroke-width:2px"
+         d="M 1512.3931,1384.2806 1409.7939,1180.4527"
+         id="path8" />
+      <path
+         class="link link--control"
+         style="stroke:#808080;stroke-width:2px"
+         d="m 1668.5112,1232.6403 -258.7173,-52.1876"
+         id="path9" />
+      <path
+         class="link link--control"
+         style="stroke:#808080;stroke-width:2px"
+         d="m 1587.6131,1029.5279 -177.8192,150.9248"
+         id="path10" />
+      <path
+         class="link link--control"
+         style="stroke:#808080;stroke-width:2px"
+         d="m 1125.3908,615.30411 54.3793,239.9634"
+         id="path11" />
+      <path
+         class="link link--control"
+         style="stroke:#808080;stroke-width:2px"
+         d="m 1348.2058,676.00921 -168.4357,179.2583"
+         id="path12" />
+      <path
+         class="link link--control"
+         style="stroke:#808080;stroke-width:2px"
+         d="M 810.72689,1518.4863 1023.642,1431.2372"
+         id="path13" />
+      <path
+         class="link link--control"
+         style="stroke:#808080;stroke-width:2px"
+         d="M 953.81171,1686.5283 1023.642,1431.2372"
+         id="path14" />
+      <path
+         class="link link--control"
+         style="stroke:#808080;stroke-width:2px"
+         d="M 1162.7109,1614.9977 1023.642,1431.2372"
+         id="path15" />
+      <rect
+         class="node"
+         width="130"
+         height="40"
+         rx="20"
+         ry="20"
+         style="fill:#0f2386;fill-opacity:1"
+         x="1039.6379"
+         y="1111.8513"
+         id="rect15" />
+      <rect
+         class="node"
+         width="80"
+         height="40"
+         rx="20"
+         ry="20"
+         style="fill:#377eb8"
+         x="776.89941"
+         y="998.85156"
+         id="rect16" />
+      <rect
+         class="node"
+         width="100"
+         height="40"
+         rx="20"
+         ry="20"
+         style="fill:#0f27c0;fill-opacity:1"
+         x="517.12952"
+         y="913.47302"
+         id="rect17" />
+      <rect
+         class="node"
+         width="110"
+         height="40"
+         rx="20"
+         ry="20"
+         style="fill:#0f27c0;fill-opacity:1"
+         x="684.39948"
+         y="778.60797"
+         id="rect18" />
+      <rect
+         class="node"
+         width="70"
+         height="40"
+         rx="20"
+         ry="20"
+         style="fill:#0f27c0;fill-opacity:1"
+         x="590.80212"
+         y="1123.0905"
+         id="rect19" />
+      <rect
+         class="node"
+         width="110"
+         height="40"
+         rx="20"
+         ry="20"
+         style="fill:#377eb8"
+         x="1354.7939"
+         y="1160.4526"
+         id="rect20" />
+      <rect
+         class="node"
+         width="90"
+         height="40"
+         rx="20"
+         ry="20"
+         style="fill:#0f27c0;fill-opacity:1"
+         x="1467.3931"
+         y="1364.2805"
+         id="rect21" />
+      <rect
+         class="node"
+         width="80"
+         height="40"
+         rx="20"
+         ry="20"
+         style="fill:#0f27c0;fill-opacity:1"
+         x="1628.5111"
+         y="1212.6403"
+         id="rect22" />
+      <rect
+         class="node"
+         width="130"
+         height="40"
+         rx="20"
+         ry="20"
+         style="fill:#0f27c0;fill-opacity:1"
+         x="1522.6132"
+         y="1009.528"
+         id="rect23" />
+      <rect
+         class="node"
+         width="170"
+         height="40"
+         rx="20"
+         ry="20"
+         style="fill:#377eb8"
+         x="1094.7701"
+         y="835.26752"
+         id="rect24" />
+      <rect
+         class="node"
+         width="100"
+         height="40"
+         rx="20"
+         ry="20"
+         style="fill:#0f27c0;fill-opacity:1"
+         x="1075.3909"
+         y="595.30414"
+         id="rect25" />
+      <rect
+         class="node"
+         width="120"
+         height="40"
+         rx="20"
+         ry="20"
+         style="fill:#0f27c0;fill-opacity:1"
+         x="1288.2058"
+         y="656.00922"
+         id="rect26" />
+      <rect
+         class="node"
+         width="150"
+         height="40"
+         rx="20"
+         ry="20"
+         style="fill:#377eb8"
+         x="948.64203"
+         y="1411.2372"
+         id="rect27" />
+      <rect
+         class="node"
+         width="220"
+         height="40"
+         rx="20"
+         ry="20"
+         style="fill:#0f27c0;fill-opacity:1"
+         x="700.72687"
+         y="1498.4863"
+         id="rect28" />
+      <rect
+         class="node"
+         width="220"
+         height="40"
+         rx="20"
+         ry="20"
+         style="fill:#0f27c0;fill-opacity:1"
+         x="843.81171"
+         y="1666.5283"
+         id="rect29" />
+      <rect
+         class="node"
+         width="240"
+         height="40"
+         rx="20"
+         ry="20"
+         style="fill:#0f27c0;fill-opacity:1"
+         x="1042.7109"
+         y="1594.9977"
+         id="rect30" />
+      <text
+         class="label"
+         style="font-size:16px;text-anchor:middle;fill:#ffffff"
+         x="1104.6379"
+         y="1136.9489"
+         id="text30">Photography</text>
+      <text
+         class="label"
+         style="font-size:16px;text-anchor:middle;fill:#ffffff"
+         x="816.89941"
+         y="1023.949"
+         id="text31">Genres</text>
+      <text
+         class="label"
+         style="font-size:16px;text-anchor:middle;fill:#ffffff"
+         x="567.12952"
+         y="938.5705"
+         id="text32">Portrait</text>
+      <text
+         class="label"
+         style="font-size:16px;text-anchor:middle;fill:#ffffff"
+         x="739.39948"
+         y="803.70544"
+         id="text33">Landscape</text>
+      <text
+         class="label"
+         style="font-size:16px;text-anchor:middle;fill:#ffffff"
+         x="625.80212"
+         y="1148.188"
+         id="text34">Event</text>
+      <text
+         class="label"
+         style="font-size:16px;text-anchor:middle;fill:#ffffff"
+         x="1409.7939"
+         y="1185.5502"
+         id="text35">Equipment</text>
+      <text
+         class="label"
+         style="font-size:16px;text-anchor:middle;fill:#ffffff"
+         x="1512.3931"
+         y="1389.3781"
+         id="text36">Cameras</text>
+      <text
+         class="label"
+         style="font-size:16px;text-anchor:middle;fill:#ffffff"
+         x="1668.5111"
+         y="1237.7378"
+         id="text37">Lenses</text>
+      <text
+         class="label"
+         style="font-size:16px;text-anchor:middle;fill:#ffffff"
+         x="1587.6132"
+         y="1034.6254"
+         id="text38">Accessories</text>
+      <text
+         class="label"
+         style="font-size:16px;text-anchor:middle;fill:#ffffff"
+         x="1179.7701"
+         y="860.36499"
+         id="text39">Post-Processing</text>
+      <text
+         class="label"
+         style="font-size:16px;text-anchor:middle;fill:#ffffff"
+         x="1125.3909"
+         y="620.40161"
+         id="text40">Software</text>
+      <text
+         class="label"
+         style="font-size:16px;text-anchor:middle;fill:#ffffff"
+         x="1348.2058"
+         y="681.10669"
+         id="text41">Techniques</text>
+      <text
+         class="label"
+         style="font-size:16px;text-anchor:middle;fill:#ffffff"
+         x="1023.642"
+         y="1436.3346"
+         id="text42">Relationships</text>
+      <text
+         class="label"
+         style="font-size:16px;text-anchor:middle;fill:#ffffff"
+         x="810.72687"
+         y="1523.5837"
+         id="text43">Portrait -&gt; Lighting</text>
+      <text
+         class="label"
+         style="font-size:16px;text-anchor:middle;fill:#ffffff"
+         x="953.81171"
+         y="1691.6257"
+         id="text44">Landscape -&gt; Tripods</text>
+      <text
+         class="label"
+         style="font-size:16px;text-anchor:middle;fill:#ffffff"
+         x="1162.7109"
+         y="1620.0951"
+         id="text45">Event -&gt; Color Grading</text>
+    </g>
+  </g>
+</svg>

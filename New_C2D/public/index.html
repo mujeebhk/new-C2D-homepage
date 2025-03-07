@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code2Diagram</title>
+
+  <link rel="icon" href="favicon-light.ico" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="favicon-dark.ico" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="Landing.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="s-shaped-gradient">
+  <div class="loader-wrapper">
+    <div class="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <img src="img/logo-new.svg" alt="Logo" class="logo" height="50" />
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#about-us">About</a></li>
+          <li><a href="#tutorials">Tutorials</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="https://code2diagram.com/console">Console</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="https://code2diagram.us.auth0.com/u/login?state=hKFo2SA5Ulc4OEc5d2NSYTNCTVBMMWF0ZVV6WUVWZXJFRTdSYqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIF9DVEpORDdqSm51dkM2TnRZRDVhX1c5andiVDl5RTdSo2NpZNkgVm1TR3lGNHVmOVhDRTdLbkhoeGk0d2VQamZ6ZGMweEk"
+              class="sign-in-btn">
+              Sign In
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="hero">
+      <div class="hero-wrapper">
+        <img src="vid/hero-gif-2.gif" alt="Hero GIF" class="hero-video">
+      </div>
+      <div>
+        <h1> WHAT DO YOU WISH TO </h1>
+        <h1> PRESENT TODAY? </h1>
+      </div>
+      <div class="text-style">
+        <h4><a href="#imagine-code-see" type="button" class="lets-explore"> Let's explore the diagrams </a></h4>
+      </div>
+      <a href="https://code2diagram.com/console" type="button" class="getstarted-a" style="border-radius: 20px ">
+        GET STARTED
+      </a>
+    </section>
+
+    <section id="about" class="section-dropdown">
+      <div class="dropdown">
+        <img src="img/search.svg" class="search-icon" alt="search" />
+        <button>Find a diagram</button>
+        <div class="dropdown-content">
+          <a href="https://code2diagram.com/console" data-value="1">Architecture Diagram</a>
+          <a href="#" data-value="2">Architecture Go</a>
+          <a href="#" data-value="3">Flow Chart</a>
+          <a href="#" data-value="4">OpenAI/ Swagger to UML</a>
+          <a href="#" data-value="5">JSON to UML</a>
+          <a href="#" data-value="6">YML to UML</a>
+          <a href="#" data-value="7">Class Diagram</a>
+          <a href="#" data-value="8">D2 Diagram</a>
+          <a href="#" data-value="9">Protobuf to UML</a>
+          <a href="#" data-value="10">Avro to UML</a>
+          <a href="#" data-value="11">Docker Compose Diagram</a>
+          <a href="#" data-value="12">Terraform</a>
+          <a href="#" data-value="13">Brainstorming</a>
+          <a href="#" data-value="14">MindMap</a>
+          <a href="#" data-value="15">Math Equation Diagram</a>
+          <a href="#" data-value="16">Mermaid to ASCII</a>
+          <a href="#" data-value="17">Playbook Grapher</a>
+          <a href="#" data-value="18">Inventory Grapher</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps" id="imagine-code-see">
+
+      <div class="steps-indicator">
+        <div class="step">
+          <div class="circle" style="background-color: #0a2262; box-shadow: 0 3px 5px #001e5720;"></div>
+          <div class="circle-text">Imagine</div>
+        </div>
+        <div class="step">
+          <div class="circle" style="background-color: #5089ba; box-shadow: 0 3px 5px #4b8bc325;"></div>
+          <div class="circle-text">Code</div>
+        </div>
+        <div class="step">
+          <div class="circle" style="background-color: #77b4d4; box-shadow: 0 3px 5px #77b4d450;"></div>
+          <div class="circle-text">See</div>
+        </div>
+
+        <div class="base-line"></div>
+        <div class="loading-line"></div>
+      </div>
+
+
+      <div class="container-lines">
+        <div class="middle-line"></div>
+        <div class="scroll-line"></div>
+      </div>
+      <div class="hexagon-container">
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-right">
+          </div>
+          <img class="svg-icon-right hexagon-group" src="img/hexagon-icon.svg" alt="hexagon" height="170" id="hex1"
+            data-target="circle1" />
+          <div class="center-circle" id="circle1"></div>
+          <h3 class="right-hexagon scale-up" style="  transform: translate(-45%, 130%);"><a href="#"
+              class="hexagon-link">ASCII
+              to PNG</a></h3>
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 62%; left: 450px;">
+            <img src="img/asciiToPng.png" alt="Dynamic Image 1" style="top:40%; left: 13%;" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <!-- Hexagon group (triggers hover) -->
+          <div class="hexagon-glow-left">
+          </div>
+          <img class="svg-icon-left hexagon-group" src="img/hexagon-icon.svg" alt="hexagon" height="170" id="hex2"
+            data-target="circle2" />
+          <div class="icon-glow-left"></div>
+          <img class="svg-icon-left overlay-icon-left" src="img/architechtural-diagram.svg" alt="icon"
+            style="transform: translate(-423%, -90%); height: 50px;" />
+          <div class="center-circle" id="circle2"></div>
+          <h3 class="hexagon-text-left scale-up scale-up"><a href="#" class="hexagon-link">ARCHITECTURAL DIAGRAM</a>
+          </h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 53%; right:134px;">
+            <img src="img/ArchDiagram-blue.svg" alt="Dynamic Image 2" style="height: 35%; left: 8%; top:30%" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-left">
+          </div>
+          <img src='img/hexagon-icon.svg' alt="hexagon" class="svg-icon-left svg-icon hexagon-group" height="170"
+            id="hex3" data-target="circle3" />
+          <div class="icon-glow-left"></div>
+          <img class="svg-icon-left overlay-icon-left" src='img/math-equation-diagram.svg' alt="icon"
+            style="transform: translate(-380%, -90%); height: 50px;" />
+          <div class="center-circle" id="circle3"></div>
+          <h3 class="hexagon-text-left scale-up"><a href="#" class="hexagon-link">MATH EQUATION DIAGRAM</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 53%; right:134px;">
+            <img src="img/diagram -2.svg" alt="" style="height: 50%; top: 20%; left: 3%" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-right">
+          </div>
+          <img class="svg-icon-right svg-icon  hexagon-group" id="hex4" data-target="circle4" src='img/hexagon-icon.svg'
+            alt="hexagon" height="170" />
+          <div class="icon-glow-right"></div>
+          <img class="svg-icon-right overlay-icon-right" src='img/flow-chart.svg' alt="icon"
+            style="transform: translate(345%, -100%); height: 50px;" />
+          <div class="center-circle" id="circle4"></div>
+          <h3 class="right-hexagon scale-up"><a href="#" class="hexagon-link">FLOW CHART</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 52%; left: 450px;">
+            <img src="img/Flowchart.svg" alt="Dynamic Image 2" style="height: 70%; top: 15%; right: 33%" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-right">
+          </div>
+          <img class="svg-icon-right svg-icon hexagon-group" id="hex5" data-target="circle5" src='img/hexagon-icon.svg'
+            alt="hexagon" height="170" />
+          <div class="icon-glow-right"></div>
+          <img class="svg-icon-right overlay-icon-right" src='img/mind-map.svg' alt="icon"
+            style="transform: translate(275%, -100%); height: 50px;" />
+          <div class="center-circle" id="circle5"></div>
+          <h3 class="right-hexagon scale-up"><a href="#" class="hexagon-link">MIND MAP</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 52%; left: 450px;">
+            <img src="img/MindMap.svg" alt="Dynamic Image 2" style="height: 100%; bottom: 0%; left: -20%" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-left">
+          </div>
+          <img src='img/hexagon-icon.svg' alt="hexagon" class="svg-icon-left svg-icon hexagon-group" id="hex6"
+            data-target="circle6" height="170" />
+          <div class="icon-glow-left"></div>
+          <img class="svg-icon-left overlay-icon-left" src='img/svg-icon-4.svg' alt="icon"
+            style="transform: translate(-355%, -100%); height: 50px;" />
+          <div class="center-circle" id="circle6"></div>
+          <h3 class="hexagon-text-left scale-up"><a href="#" class="hexagon-link">JSON to UML</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 53%; right:134px;">
+            <img src="img/JsonToUML-blue.svg" alt="Dynamic Image 2" style="height: 20%; top:30%; left: 7%;" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-left">
+          </div>
+          <img src='img/hexagon-icon.svg' alt="hexagon" class="svg-icon-left svg-icon hexagon-group" height="170"
+            id="hex7" data-target="circle7" />
+          <div class="icon-glow-left"></div>
+          <img class="svg-icon-left overlay-icon-left" src='img/svg-icon-4.svg' alt="icon"
+            style="transform: translate(-355%, -100%); height: 50px;" />
+          <div class="center-circle" id="circle7"></div>
+          <h3 class="hexagon-text-left scale-up"><a href="#" class="hexagon-link">YML to UML</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 53%; right:134px;">
+            <img src="img/YamlToUML-blue.svg" alt="Dynamic Image 2" style="top: 25%; left: 5%; height: 45%;" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-right">
+          </div>
+          <img class="svg-icon-right svg-icon hexagon-group" id="hex8" data-target="circle8" src='img/hexagon-icon.svg'
+            alt="hexagon" height="170" />
+          <div class="icon-glow-right"></div>
+          <img class="svg-icon-right overlay-icon-right" src='img/svg-icon-4.svg' alt="icon"
+            style="transform: translate(270%, -100%); height: 50px;" />
+          <div class="center-circle" id="circle8"></div>
+          <h3 class="right-hexagon scale-up"><a href="#" class="hexagon-link">SWAGGER to UML</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 52%; left: 450px;">
+            <img src="img/SwaggerToUML-blue.svg" alt="Dynamic Image 2" style="top: 35%; height: 25%; left: 2%" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-left">
+          </div>
+          <img src='img/hexagon-icon.svg' alt="hexagon" class="svg-icon-left svg-icon hexagon-group" id="hex9"
+            data-target="circle9" height="170" />
+          <div class="icon-glow-left"></div>
+          <img class="svg-icon-left overlay-icon-left" src='img/svg-icon-4.svg' alt="icon"
+            style="transform: translate(-355%, -100%); height: 50px;" />
+          <div class="center-circle" id="circle9"></div>
+          <h3 class="hexagon-text-left scale-up"><a href="#" class="hexagon-link">PROTOBUF to UML</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 53%; right:134px;">
+            <img src="img/ProtobufToUML.svg" alt="Dynamic Image 2" style="top: 30%; left: 3%; height: 33%;" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-right">
+          </div>
+          <img class="svg-icon-right svg-icon hexagon-group" id="hex10" data-target="circle10"
+            src='img/hexagon-icon.svg' alt="hexagon" height="170" />
+          <div class="center-circle" id="circle10"></div>
+          <h3 class="right-hexagon scale-up" style="  transform: translate(-45%, 130%);"><a href="#"
+              class="hexagon-link">AVRO-SCHEMA</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 62%; left: 450px;">
+            <img src="img/AvroToUML.svg" alt="Dynamic Image 2" style="top: 35%; left: 5%; height: 15%;" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-right">
+          </div>
+          <img class="svg-icon-right svg-icon hexagon-group" id="hex11" data-target="circle11"
+            src='img/hexagon-icon.svg' alt="hexagon" height="170" />
+          <div class="center-circle" id="circle11"></div>
+          <h3 class="right-hexagon scale-up" style="  transform: translate(-45%, 130%);"><a href="#"
+              class="hexagon-link">BRAINSTORMING</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 62%; left: 450px;">
+            <img src="img/Brainstorming.png" alt="" style="height: 30%; top: 30%; left: 12%" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-left">
+          </div>
+          <img src='img/hexagon-icon.svg' alt="hexagon" class="svg-icon-left svg-icon hexagon-group" id="hex12"
+            data-target="circle12" height="170" />
+          <div class="center-circle" id="circle12"></div>
+          <h3 class="hexagon-text-left scale-up" style="  transform: translate(-45%, 130%);"><a href="#"
+              class="hexagon-link">D2
+              DIAGRAM</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 63%; right:134px;">
+            <img src="img/D2diagram.png" alt="" style="height: 70%; top: 12%; left: 37%" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-left">
+          </div>
+          <img src='img/hexagon-icon.svg' alt="hexagon" class="svg-icon-left svg-icon hexagon-group" id="hex13"
+            data-target="circle13" height="170" />
+          <div class="icon-glow-left"></div>
+          <img class="svg-icon-left overlay-icon-left" src='img/svg-icon-3.svg' alt="icon"
+            style="transform: translate(-315%, -110%); height: 40px;" />
+          <div class="center-circle" id="circle13"></div>
+          <h3 class="hexagon-text-left scale-up"><a href="#" class="hexagon-link">DOCKER-COMPOSE</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 55%; right:134px;">
+            <img src="img/DockerCompose.png" alt="Dynamic Image 2"
+              style="height: 70%; left:-5%; top:10%; mix-blend-mode: multiply;" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-right">
+          </div>
+          <img class="svg-icon-right svg-icon hexagon-group" id="hex14" data-target="circle14"
+            src='img/hexagon-icon.svg' alt="hexagon" height="170" />
+          <div class="center-circle" id="circle14"></div>
+          <h3 class="right-hexagon scale-up" style="  transform: translate(-45%, 130%);"><a href="#"
+              class="hexagon-link">TERRAFORM</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 62%; left: 450px;">
+            <img src="img/Terraform.svg" alt="Dynamic Image 2" style="top: 33%; left: 0%; height: 25%" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-right">
+          </div>
+          <img class="svg-icon-right svg-icon hexagon-group" id="hex15" data-target="circle15"
+            src='img/hexagon-icon.svg' alt="hexagon" height="170" />
+          <div class="center-circle" id="circle15"></div>
+          <h3 class="right-hexagon scale-up" style=" transform: translate(-45%, 130%);"><a href="#"
+              class="hexagon-link">PLAYBOOK
+              GRAPHER</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 62%; left: 450px;">
+            <img src="img/PlaybookGrapher-blue.svg" alt="Dynamic Image 2" style="top: 33%; left: 3%; height:25%" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-left">
+          </div>
+          <img src='img/hexagon-icon.svg' alt="hexagon" class="svg-icon-left svg-icon hexagon-group" id="hex16"
+            data-target="circle16" height="170" />
+          <div class="center-circle" id="circle16"></div>
+          <h3 class="hexagon-text-left scale-up" style=" transform: translate(-45%, 130%);"><a href="#"
+              class="hexagon-link">WEB
+              SEQUENCE</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 63%; right:134px;">
+            <img src="img/arch-diagram.svg" alt="Dynamic Image 2" style="top: 10%; left: 10%; height:60%;" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-left">
+          </div>
+          <img src='img/hexagon-icon.svg' alt="hexagon" class="svg-icon-left svg-icon hexagon-group" id="hex17"
+            data-target="circle17" height="170" />
+          <div class="icon-glow-left"></div>
+          <img class="svg-icon-left overlay-icon-left" src='img/class-diagram.svg' alt="icon"
+            style="transform: translate(-350%, -100%); height: 40px;" />
+          <div class="center-circle" id="circle17"></div>
+          <h3 class="hexagon-text-left scale-up"><a href="#" class="hexagon-link">CLASS DIAGRAM</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 55%; right:134px;">
+            <img src="img/ClassDiagram.svg" alt="Dynamic Image 2" style="top: 25%; height: 45%; left: 10%" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-right">
+          </div>
+          <img class="svg-icon-right svg-icon hexagon-group" id="hex15" data-target="circle15"
+            src='img/hexagon-icon.svg' alt="hexagon" height="170" />
+          <div class="center-circle" id="circle15"></div>
+          <h3 class="right-hexagon scale-up" style=" transform: translate(-45%, 130%);"><a href="#"
+              class="hexagon-link">ARCHITECTURE GO</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 62%; left: 450px;">
+            <img src="img/PlaybookGrapher.svg" alt="Dynamic Image 2" style="top: 33%; left: 3%; height:25%" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-right">
+          </div>
+          <img class="svg-icon-right svg-icon hexagon-group" id="hex15" data-target="circle15"
+            src='img/hexagon-icon.svg' alt="hexagon" height="170" />
+          <div class="center-circle" id="circle15"></div>
+          <h3 class="right-hexagon scale-up" style=" transform: translate(-45%, 130%);"><a href="#"
+              class="hexagon-link">UML TO
+              ASCII</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 62%; left: 450px;">
+            <img src="img/UMLtoASCII.svg" alt="Dynamic Image 2" style="top: 40%; left: 5%; height:13%" />
+          </div>
+        </div>
+
+        <div class="hexagon-hover circle-group">
+          <div class="hexagon-glow-left">
+          </div>
+          <img src='img/hexagon-icon.svg' alt="hexagon" class="svg-icon-left svg-icon hexagon-group" id="hex17"
+            data-target="circle17" height="170" />
+          <div class="icon-glow-left"></div>
+          <img class="svg-icon-left overlay-icon-left" src='img/class-diagram.svg' alt="icon"
+            style="transform: translate(-350%, -100%); height: 40px;" />
+          <div class="center-circle" id="circle17"></div>
+          <h3 class="hexagon-text-left scale-up"><a href="#" class="hexagon-link">INVENTORY GRAPHER</a></h3>
+
+          <!-- Dynamic hexagon -->
+          <div class="dynamic-hexagon" style="top: 55%; right:134px;">
+            <img src="img/ClassDiagram.svg" alt="Dynamic Image 2" style="top: 25%; height: 45%; left: 10%" />
+          </div>
+        </div>
+
+
+        <div class="hexagon-container hexagon-group" data-target="circle18">
+          <div class="center-circle" id="circle18" style="margin-top: 40px"></div>
+        </div>
+    </section>
+    <section id="tutorials">
+      <div class="carousel">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <img src="img/slideshow1.png" alt="Slide 1" />
+          </div>
+          <div class="carousel-slide">
+            <img src="img/slideshow2.png" alt="Slide 2" />
+          </div>
+          <div class="carousel-slide">
+            <img src="img/slideshow3.png" alt="Slide 3" />
+          </div>
+        </div>
+        <div class="carousel-nav">
+          <button class="carousel-dot" data-slide="0"></button>
+          <button class="carousel-dot" data-slide="1"></button>
+          <button class="carousel-dot" data-slide="2"></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="vision-mission-values" style="margin-top: 100px;">
+
+      <div class="steps-indicator-2">
+        <div class="step-2" data-target="about-us">
+          <div class="circle-2" style="background-color: #0a2262; box-shadow: 0 3px 5px #001e5720;"></div>
+          <div class="circle-text2" style="left: 23px">Vision</div>
+        </div>
+        <div class="step-2" data-target="Mission">
+          <div class="circle-2" style="background-color: #5089ba; box-shadow: 0 3px 5px #4b8bc325;"></div>
+          <div class="circle-text2">Mission</div>
+        </div>
+        <div class="step-2" data-target="Values">
+          <div class="circle-2" style="background-color: #77b4d4; box-shadow: 0 3px 5px #77b4d450;"></div>
+          <div class="circle-text2" style="left: 97%">Values</div>
+        </div>
+
+        <div class="base-line-2"></div>
+        <div class="loading-line-2"></div>
+      </div>
+
+      <section class="content-section active" id="about-us">
+        <div>
+          <h3 class="tab-heading">VISION</h3>
+        </div>
+        <p class="tab-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          ncididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrudsi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia
+          deserunt mollit anim id est laborum.</p>
+      </section>
+
+      <section class="content-section" id="Mission">
+        <div>
+          <h3 class="tab-heading">MISSION</h3>
+        </div>
+        <p class="tab-text">There are many variations of passages of Lorem Ipsum available, but the majority have
+          suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+          believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+          embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
+          predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary
+          of
+          over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which
+          looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or
+          non-characteristic words etc.</p>
+      </section>
+
+      <section class="content-section" id="Values">
+        <div>
+          <h3 class="tab-heading">VALUES</h3>
+        </div>
+        <p class="tab-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+          laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+          consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+          ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+          labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+          ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+          reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum
+          fugiat quo voluptas nulla pariatur</p>
+      </section>
+    </section>
+
+    <div class="container-lines">
+      <div class="middle-line-3"></div>
+      <!-- <div class="scroll-line"></div> -->
+      <div class="about-us-div">
+        <h4 class="about-us-text">LET'S CONNECT</h4>
+        <button class="about-us-button">CONTACT</button>
+
+        <div class="subscribe-button">
+          <h4 class="about-us-text">GET THE LATEST ON C2D</h4>
+          <button class="about-us-button">SUBSCRIBE</button>
+        </div>
+
+        <div class="join-button">
+          <h4 class="about-us-text">JOIN OUR TEAM</h4>
+          <button class="about-us-button">CONNECT</button>
+        </div>
+      </div>
+
+    </div>
+    <section id="blog" style="margin-top: 2500px;">
+    </section>
+    <section>
+      <div>
+        <h3 class="h5-text"> Trusted by leading engineering teams globally</h3>
+      </div>
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="img/ibm.png" height="30" width="100" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/ADNOCDIST.png" height="50" width="100" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/capegemini.png" height="25" width="100" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/cognizant.png" height="20" width="100" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/Nasdaq.png" height="30" width="100" alt="" />
+          </div>
+          <div class="slide">
+            <img src="img/scania.png" he5ght="50" width="85" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer style="margin-top: 100px; ">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Explore</h4>
+          <ul>
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Product</h4>
+          <ul>
+            <li>
+              <a href="#">Features</a>
+            </li>
+            <li>
+              <a href="#">Tutorials</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Download</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Socials</h4>
+          <ul>
+            <li>
+              <a href="#">YouTube</a>
+            </li>
+            <li>
+              <a href="#">X</a>
+            </li>
+            <li>
+              <a href="#">GitHub</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <a href="#" class="social-icon twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="social-icon linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:example@example.com" class="social-icon email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
+  </main>
+  <script>
+
+
+    // window.addEventListener("load", function () {
+    //   document.querySelector(".loader-wrapper").style.display = "none";
+    //   document.querySelector(".content").style.display = "block";
+    // });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const scrollLine = document.querySelector(".scroll-line");
+      const middleLine = document.querySelector(".middle-line");
+      const centerCircles = Array.from(document.querySelectorAll(".center-circle"));
+
+      const scrollLineHeight = 250;
+      const offset = 0;
+      const startOffset = 150;
+
+      const getCirclePositions = () => {
+        return centerCircles.map((circle) => {
+          const rect = circle.getBoundingClientRect();
+          return {
+            top: rect.top + window.scrollY,
+            bottom: rect.top + window.scrollY + circle.offsetHeight,
+            element: circle,
+            parentGroup: circle.closest(".circle-group"),
+            timeoutId: null,
+            isHighlighted: false,
+          };
+        });
+      };
+
+      let circlePositions = getCirclePositions();
+      const middleLineTop = middleLine.getBoundingClientRect().top + window.scrollY;
+      const middleLineHeight = middleLine.offsetHeight;
+
+      const handleScroll = () => {
+        const scrollY = window.scrollY + window.innerHeight / 2.5;
+        let scrollLinePosition = Math.min(
+          Math.max(scrollY - middleLineTop - startOffset, 0),
+          middleLineHeight - scrollLineHeight
+        );
+
+        scrollLine.style.top = `${scrollLinePosition + startOffset}px`;
+
+        const scrollLineTop = scrollLinePosition + middleLineTop + startOffset;
+        const scrollLineBottom = scrollLineTop + scrollLineHeight;
+
+        const remainingHeight = middleLineHeight - (scrollLinePosition + scrollLineHeight);
+        scrollLine.style.opacity = remainingHeight < 100 ? Math.max(remainingHeight / 100, 0) : 1;
+
+        circlePositions.forEach((circleData) => {
+          const { top, bottom, element, parentGroup, timeoutId } = circleData;
+          const isHighlighted = scrollLineBottom - offset > top && scrollLineTop + offset < bottom;
+
+          const dynamicHexagon = parentGroup.querySelector(".dynamic-hexagon");
+          const hexagonGroup = parentGroup.querySelector(".hexagon-group");
+          const hexagonGlowLeft = parentGroup.querySelector(".hexagon-glow-left");
+          const hexagonGlowRight = parentGroup.querySelector(".hexagon-glow-right");
+          const iconGlowLeft = parentGroup.querySelector(".icon-glow-left");
+          const iconGlowRight = parentGroup.querySelector(".icon-glow-right");
+          const overlayIconLeft = parentGroup.querySelector(".overlay-icon-left");
+          const overlayIconRight = parentGroup.querySelector(".overlay-icon-right");
+          const hexagonTextLeft = parentGroup.querySelector(".hexagon-text-left");
+          const rightHexagon = parentGroup.querySelector(".right-hexagon");
+
+          if (isHighlighted) {
+            if (!circleData.isHighlighted) {
+              element.classList.add("highlight");
+              hexagonGroup.classList.add("highlight");
+
+              if (hexagonGlowLeft) hexagonGlowLeft.classList.add("highlight");
+              if (hexagonGlowRight) hexagonGlowRight.classList.add("highlight");
+              if (iconGlowLeft) iconGlowLeft.classList.add("highlight");
+              if (iconGlowRight) iconGlowRight.classList.add("highlight");
+
+              hexagonGroup.style.filter =
+                "invert(10%) sepia(95%) saturate(2118%) hue-rotate(160deg) brightness(45%) contrast(300%)";
+              hexagonGroup.style.opacity = "1";
+
+              if (!timeoutId) {
+                circleData.timeoutId = setTimeout(() => {
+                  if (hexagonGroup.classList.contains("highlight")) {
+                    dynamicHexagon.classList.add("visible");
+                    hexagonGroup.style.opacity = "0.1";
+
+                    if (iconGlowLeft) iconGlowLeft.style.opacity = "0";
+                    if (iconGlowRight) iconGlowRight.style.opacity = "0";
+                    if (hexagonGlowLeft) hexagonGlowLeft.style.opacity = "0";
+                    if (hexagonGlowRight) hexagonGlowRight.style.opacity = "0";
+                    if (overlayIconLeft) overlayIconLeft.style.opacity = "0.2";
+                    if (overlayIconRight) overlayIconRight.style.opacity = "0.2";
+
+                    // Scale hexagon text and right hexagon when opacity is reduced
+                    if (hexagonTextLeft) hexagonTextLeft.classList.add("scale-up");
+                    if (rightHexagon) rightHexagon.classList.add("scale-up");
+                  }
+                  circleData.timeoutId = null;
+                }, 1000);
+              }
+              circleData.isHighlighted = true;
+            }
+          } else {
+            if (circleData.isHighlighted) {
+              element.classList.remove("highlight");
+              hexagonGroup.classList.remove("highlight");
+
+              if (hexagonGlowLeft) hexagonGlowLeft.classList.remove("highlight");
+              if (hexagonGlowRight) hexagonGlowRight.classList.remove("highlight");
+              if (iconGlowLeft) iconGlowLeft.classList.remove("highlight");
+              if (iconGlowRight) iconGlowRight.classList.remove("highlight");
+
+              dynamicHexagon.classList.remove("visible");
+
+              hexagonGroup.style.filter = "none";
+              hexagonGroup.style.opacity = "1";
+
+              if (hexagonGlowLeft) hexagonGlowLeft.style.opacity = "1";
+              if (hexagonGlowRight) hexagonGlowRight.style.opacity = "1";
+              if (iconGlowLeft) iconGlowLeft.style.opacity = "1";
+              if (iconGlowRight) iconGlowRight.style.opacity = "1";
+              if (overlayIconLeft) overlayIconLeft.style.opacity = "1";
+              if (overlayIconRight) overlayIconRight.style.opacity = "1";
+
+              // Remove scaling when the hexagon's opacity is restored
+              if (hexagonTextLeft) hexagonTextLeft.classList.remove("scale-up");
+              if (rightHexagon) rightHexagon.classList.remove("scale-up");
+
+              if (circleData.timeoutId) {
+                clearTimeout(circleData.timeoutId);
+                circleData.timeoutId = null;
+              }
+
+              circleData.isHighlighted = false;
+            }
+          }
+        });
+      };
+
+      window.addEventListener("resize", () => {
+        circlePositions = getCirclePositions();
+      });
+
+      window.addEventListener("scroll", handleScroll);
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const track = document.querySelector(".carousel-track");
+      const slides = Array.from(track.children);
+      const dotsNav = document.querySelector(".carousel-nav");
+      const dots = Array.from(dotsNav.children);
+
+      const slideWidth = slides[0].getBoundingClientRect().width;
+      let slideIndex = 0; // Track the current slide
+      const slideInterval = 2000; // Auto-slide every 3 seconds
+      let autoSlideTimer;
+
+      // Arrange the slides next to one another
+      slides.forEach((slide, index) => {
+        slide.style.left = `${index * slideWidth}px`;
+      });
+
+      // Move to the target slide
+      const moveToSlide = (index) => {
+        track.style.transform = `translateX(-${slideWidth * index}px)`;
+
+        // Update active slide & dots
+        slides.forEach((slide) => slide.classList.remove("active"));
+        dots.forEach((dot) => dot.classList.remove("active"));
+
+        slides[index].classList.add("active");
+        dots[index].classList.add("active");
+
+        slideIndex = index; // Update the current slide index
+      };
+
+      // Auto-slide function
+      const startAutoSlide = () => {
+        autoSlideTimer = setInterval(() => {
+          const nextIndex = (slideIndex + 1) % slides.length; // Loop back to first slide
+          moveToSlide(nextIndex);
+        }, slideInterval);
+      };
+
+      // Restart auto-slide on user interaction
+      const resetAutoSlide = () => {
+        clearInterval(autoSlideTimer);
+        startAutoSlide();
+      };
+
+      // Click event for dots
+      dotsNav.addEventListener("click", (e) => {
+        const targetDot = e.target.closest("button");
+        if (!targetDot) return;
+
+        const targetIndex = dots.findIndex((dot) => dot === targetDot);
+        moveToSlide(targetIndex);
+        resetAutoSlide(); // Restart auto-slide when user clicks
+      });
+
+      // Initialize first slide as active
+      slides[0].classList.add("active");
+      dots[0].classList.add("active");
+
+      // Start the auto-slide
+      startAutoSlide();
+    });
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const circles = document.querySelectorAll(".circle");
+      const texts = document.querySelectorAll(".circle-text");
+      const loadingLine = document.querySelector(".loading-line");
+      const animationDuration = 400; // Time to highlight each circle in ms
+      const section = document.getElementById("imagine-code-see"); // Target section
+      let animationTriggered = false; // Ensure the animation triggers only once
+
+      // Reset all styles (circles, texts, and the loading line)
+      const resetStyles = () => {
+        circles.forEach((circle, index) => {
+          circle.classList.remove("highlighted");
+          texts[index].classList.remove("highlighted"); // Reset text color
+        });
+        loadingLine.style.opacity = "0"; // Hide the loading line
+        loadingLine.style.animation = ""; // Remove animation
+      };
+
+      // Animate the circles, texts, and the loading line
+      const animateSteps = () => {
+        // Show the loading line and animate it
+        loadingLine.style.opacity = "1";
+        loadingLine.style.animation = `moveLine ${circles.length * animationDuration}ms linear forwards`;
+
+        circles.forEach((circle, index) => {
+          setTimeout(() => {
+
+            if (index > 0) {
+              circles[index - 1].classList.remove("highlighted");
+              texts[index - 1].classList.remove("highlighted"); // Reset the previous text
+            }
+            // Highlight the current circle and text
+            circle.classList.add("highlighted");
+            texts[index].classList.add("highlighted");
+
+            // Reset all styles after the last animation
+            if (index === circles.length - 1) {
+              setTimeout(() => {
+                resetStyles(); // Reset styles
+              }, animationDuration);
+            }
+          }, index * animationDuration); // Delay between each circle animation
+        });
+      };
+
+      // Scroll-trigger logic
+      const onScroll = () => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const viewportHeight = window.innerHeight;
+
+        // Trigger animation only when section is in the viewport
+        if (sectionTop < viewportHeight && sectionTop >= 0 && !animationTriggered) {
+          animationTriggered = true; // Ensure the animation triggers only once
+          animateSteps(); // Start the animation
+        }
+      };
+
+      // Attach the scroll listener
+      window.addEventListener("scroll", onScroll);
+
+      // Check if the section is already visible when the page loads
+      onScroll();
+    });
+
+
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const circles = document.querySelectorAll(".circle-2");
+      const texts = document.querySelectorAll(".circle-text2");
+      const loadingLine = document.querySelector(".loading-line-2");
+      const steps = document.querySelectorAll(".step-2");
+      const sections = document.querySelectorAll(".content-section");
+      const animationDuration = 400;
+      let animationTriggered = false;
+
+      // Function to reset styles
+      const resetStyles = () => {
+        circles.forEach(circle => circle.classList.remove("highlighted"));
+        texts.forEach(text => text.classList.remove("highlighted", "scaled"));
+        loadingLine.style.opacity = "0";
+        loadingLine.style.animation = "";
+      };
+
+      // Function to animate steps sequentially
+      const animateSteps = () => {
+        loadingLine.style.opacity = "1";
+        loadingLine.style.animation = `moveLine ${circles.length * animationDuration}ms linear forwards`;
+
+        circles.forEach((circle, index) => {
+          setTimeout(() => {
+            if (index > 0) {
+              circles[index - 1].classList.remove("highlighted");
+              texts[index - 1].classList.remove("highlighted", "scaled");
+            }
+            circle.classList.add("highlighted");
+            texts[index].classList.add("highlighted", "scaled");
+
+            // After the animation ends, keep the first circle highlighted
+            if (index === circles.length - 1) {
+              setTimeout(() => {
+                resetStyles();
+                circles[0].classList.add("highlighted");
+                texts[0].classList.add("highlighted", "scaled");
+              }, animationDuration);
+            }
+          }, index * animationDuration);
+        });
+      };
+
+      // Scroll-triggered animation
+      const onScroll = () => {
+        const section = document.getElementById("vision-mission-values");
+        if (!section) return;
+        const sectionTop = section.getBoundingClientRect().top;
+        const viewportHeight = window.innerHeight;
+
+        if (sectionTop < viewportHeight && sectionTop >= 0 && !animationTriggered) {
+          animationTriggered = true;
+          animateSteps();
+        }
+      };
+
+      // Handle section switching on click
+      steps.forEach((step, index) => {
+        step.addEventListener("click", () => {
+          resetStyles();
+          circles[index].classList.add("highlighted");
+          texts[index].classList.add("highlighted", "scaled");
+
+          sections.forEach(section => section.classList.remove("active"));
+          sections[index].classList.add("active");
+        });
+      });
+
+      // Attach scroll listener
+      window.addEventListener("scroll", onScroll);
+      onScroll(); // Initial check on load
+
+      // Prevent horizontal scroll
+      window.addEventListener("resize", () => {
+        document.body.style.overflowX = "hidden";
+      });
+      document.body.style.overflowX = "hidden";
+    });
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

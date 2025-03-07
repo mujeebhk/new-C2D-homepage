@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   contentStyleType="text/css"
+   data-diagram-type="YAML"
+   height="397"
+   preserveAspectRatio="none"
+   version="1.1"
+   viewBox="0 0 563 397"
+   width="563"
+   zoomAndPan="magnify"
+   id="svg59"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="g59">
+    <rect
+       fill="#f1f1f1"
+       height="40.5938"
+       rx="5"
+       ry="5"
+       style="stroke:#f1f1f1;stroke-width:1.5"
+       width="23.350599"
+       x="10"
+       y="147"
+       id="rect1" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="13.3506"
+       x="15"
+       y="161.9951"
+       id="text1">   </text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="10"
+       x2="33.350601"
+       y1="167.29691"
+       y2="167.29691"
+       id="line1" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="13.3506"
+       x="15"
+       y="182.29201"
+       id="text2">   </text>
+    <rect
+       fill="#ffffff"
+       fill-opacity="0"
+       height="40.5938"
+       rx="5"
+       ry="5"
+       style="stroke:#000000;stroke-width:1.5"
+       width="23.350599"
+       x="10"
+       y="147"
+       id="rect2" />
+    <rect
+       fill="#f1f1f1"
+       height="101.4844"
+       rx="5"
+       ry="5"
+       style="stroke:#f1f1f1;stroke-width:1.5"
+       width="265.0957"
+       x="70"
+       y="37.757801"
+       id="rect3" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="43.497101"
+       x="75"
+       y="52.752899"
+       id="text3">name</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="162.81149"
+       x="167.28419"
+       y="52.752899"
+       id="text4">Sunset Over the Ocean</text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="162.28419"
+       x2="162.28419"
+       y1="37.757801"
+       y2="58.054699"
+       id="line4" />
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="70"
+       x2="335.0957"
+       y1="58.054699"
+       y2="58.054699"
+       id="line5" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="61.147499"
+       x="75"
+       y="73.049797"
+       id="text5">photoId</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="44.536098"
+       x="167.28419"
+       y="73.049797"
+       id="text6">12345</text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="162.28419"
+       x2="162.28419"
+       y1="58.054699"
+       y2="78.351601"
+       id="line6" />
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="70"
+       x2="335.0957"
+       y1="78.351601"
+       y2="78.351601"
+       id="line7" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="70.273399"
+       x="75"
+       y="93.346703"
+       id="text7">uploader</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="13.3506"
+       x="167.28419"
+       y="93.346703"
+       id="text8">   </text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="162.28419"
+       x2="162.28419"
+       y1="78.351601"
+       y2="98.648399"
+       id="line8" />
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="70"
+       x2="335.0957"
+       y1="98.648399"
+       y2="98.648399"
+       id="line9" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="82.284203"
+       x="75"
+       y="113.6436"
+       id="text9">properties</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="13.3506"
+       x="167.28419"
+       y="113.6436"
+       id="text10">   </text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="162.28419"
+       x2="162.28419"
+       y1="98.648399"
+       y2="118.9453"
+       id="line10" />
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="70"
+       x2="335.0957"
+       y1="118.9453"
+       y2="118.9453"
+       id="line11" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="34.494099"
+       x="75"
+       y="133.9404"
+       id="text11">tags</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="13.3506"
+       x="167.28419"
+       y="133.9404"
+       id="text12">   </text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="162.28419"
+       x2="162.28419"
+       y1="118.9453"
+       y2="139.2422"
+       id="line12" />
+    <rect
+       fill="#ffffff"
+       fill-opacity="0"
+       height="101.4844"
+       rx="5"
+       ry="5"
+       style="stroke:#000000;stroke-width:1.5"
+       width="265.0957"
+       x="70"
+       y="37.757801"
+       id="rect12" />
+    <rect
+       fill="#f1f1f1"
+       height="40.5938"
+       rx="5"
+       ry="5"
+       style="stroke:#f1f1f1;stroke-width:1.5"
+       width="132.5332"
+       x="395.5"
+       y="10"
+       id="rect13" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="43.497101"
+       x="400.5"
+       y="24.9951"
+       id="text13">name</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="62.6035"
+       x="460.42969"
+       y="24.9951"
+       id="text14">Jane Doe</text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="455.42969"
+       x2="455.42969"
+       y1="10"
+       y2="30.2969"
+       id="line14" />
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="395.5"
+       x2="528.0332"
+       y1="30.2969"
+       y2="30.2969"
+       id="line15" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="49.929699"
+       x="400.5"
+       y="45.292"
+       id="text15">userId</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="44.536098"
+       x="460.42969"
+       y="45.292"
+       id="text16">67890</text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="455.42969"
+       x2="455.42969"
+       y1="30.2969"
+       y2="50.5938"
+       id="line16" />
+    <rect
+       fill="#ffffff"
+       fill-opacity="0"
+       height="40.5938"
+       rx="5"
+       ry="5"
+       style="stroke:#000000;stroke-width:1.5"
+       width="132.5332"
+       x="395.5"
+       y="10"
+       id="rect16" />
+    <rect
+       fill="#f1f1f1"
+       height="40.5938"
+       rx="5"
+       ry="5"
+       style="stroke:#f1f1f1;stroke-width:1.5"
+       width="179.7354"
+       x="372"
+       y="69"
+       id="rect17" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="30.7754"
+       x="377"
+       y="83.995102"
+       id="text17">size</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="30.590799"
+       x="467.19241"
+       y="83.995102"
+       id="text18">5MB</text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="462.19241"
+       x2="462.19241"
+       y1="69"
+       y2="89.296898"
+       id="line18" />
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="372"
+       x2="551.73541"
+       y1="89.296898"
+       y2="89.296898"
+       id="line19" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="80.192398"
+       x="377"
+       y="104.292"
+       id="text19">resolution</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="79.542999"
+       x="467.19241"
+       y="104.292"
+       id="text20">1920x1080</text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="462.19241"
+       x2="462.19241"
+       y1="89.296898"
+       y2="109.5938"
+       id="line20" />
+    <rect
+       fill="#ffffff"
+       fill-opacity="0"
+       height="40.5938"
+       rx="5"
+       ry="5"
+       style="stroke:#000000;stroke-width:1.5"
+       width="179.7354"
+       x="372"
+       y="69"
+       id="rect20" />
+    <rect
+       fill="#f1f1f1"
+       height="60.890598"
+       rx="5"
+       ry="5"
+       style="stroke:#f1f1f1;stroke-width:1.5"
+       width="81.298798"
+       x="421.5"
+       y="128"
+       id="rect21" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="71.298798"
+       x="426.5"
+       y="142.9951"
+       id="text21">landscape</text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="421.5"
+       x2="502.7988"
+       y1="148.29691"
+       y2="148.29691"
+       id="line21" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="46.436501"
+       x="426.5"
+       y="163.29201"
+       id="text22">sunset</text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="421.5"
+       x2="502.7988"
+       y1="168.5938"
+       y2="168.5938"
+       id="line22" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="46.183601"
+       x="426.5"
+       y="183.5889"
+       id="text23">nature</text>
+    <rect
+       fill="#ffffff"
+       fill-opacity="0"
+       height="60.890598"
+       rx="5"
+       ry="5"
+       style="stroke:#000000;stroke-width:1.5"
+       width="81.298798"
+       x="421.5"
+       y="128"
+       id="rect23" />
+    <rect
+       fill="#f1f1f1"
+       height="101.4844"
+       rx="5"
+       ry="5"
+       style="stroke:#f1f1f1;stroke-width:1.5"
+       width="224.1416"
+       x="90.5"
+       y="195.7578"
+       id="rect24" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="43.497101"
+       x="95.5"
+       y="210.7529"
+       id="text24">name</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="121.8574"
+       x="187.78419"
+       y="210.7529"
+       id="text25">Mountain Sunrise</text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="182.78419"
+       x2="182.78419"
+       y1="195.7578"
+       y2="216.0547"
+       id="line25" />
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="90.5"
+       x2="314.6416"
+       y1="216.0547"
+       y2="216.0547"
+       id="line26" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="61.147499"
+       x="95.5"
+       y="231.0498"
+       id="text26">photoId</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="44.536098"
+       x="187.78419"
+       y="231.0498"
+       id="text27">56789</text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="182.78419"
+       x2="182.78419"
+       y1="216.0547"
+       y2="236.35159"
+       id="line27" />
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="90.5"
+       x2="314.6416"
+       y1="236.35159"
+       y2="236.35159"
+       id="line28" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="70.273399"
+       x="95.5"
+       y="251.34669"
+       id="text28">uploader</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="13.3506"
+       x="187.78419"
+       y="251.34669"
+       id="text29">   </text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="182.78419"
+       x2="182.78419"
+       y1="236.35159"
+       y2="256.64841"
+       id="line29" />
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="90.5"
+       x2="314.6416"
+       y1="256.64841"
+       y2="256.64841"
+       id="line30" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="82.284203"
+       x="95.5"
+       y="271.64359"
+       id="text30">properties</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="13.3506"
+       x="187.78419"
+       y="271.64359"
+       id="text31">   </text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="182.78419"
+       x2="182.78419"
+       y1="256.64841"
+       y2="276.94531"
+       id="line31" />
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="90.5"
+       x2="314.6416"
+       y1="276.94531"
+       y2="276.94531"
+       id="line32" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="34.494099"
+       x="95.5"
+       y="291.9404"
+       id="text32">tags</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="13.3506"
+       x="187.78419"
+       y="291.9404"
+       id="text33">   </text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="182.78419"
+       x2="182.78419"
+       y1="276.94531"
+       y2="297.24219"
+       id="line33" />
+    <rect
+       fill="#ffffff"
+       fill-opacity="0"
+       height="101.4844"
+       rx="5"
+       ry="5"
+       style="stroke:#000000;stroke-width:1.5"
+       width="224.1416"
+       x="90.5"
+       y="195.7578"
+       id="rect33" />
+    <rect
+       fill="#f1f1f1"
+       height="40.5938"
+       rx="5"
+       ry="5"
+       style="stroke:#f1f1f1;stroke-width:1.5"
+       width="145.59669"
+       x="389"
+       y="207"
+       id="rect34" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="43.497101"
+       x="394"
+       y="221.9951"
+       id="text34">name</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="75.667"
+       x="453.92969"
+       y="221.9951"
+       id="text35">John Smith</text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="448.92969"
+       x2="448.92969"
+       y1="207"
+       y2="227.29691"
+       id="line35" />
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="389"
+       x2="534.59668"
+       y1="227.29691"
+       y2="227.29691"
+       id="line36" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="49.929699"
+       x="394"
+       y="242.29201"
+       id="text36">userId</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="44.536098"
+       x="453.92969"
+       y="242.29201"
+       id="text37">11223</text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="448.92969"
+       x2="448.92969"
+       y1="227.29691"
+       y2="247.5938"
+       id="line37" />
+    <rect
+       fill="#ffffff"
+       fill-opacity="0"
+       height="40.5938"
+       rx="5"
+       ry="5"
+       style="stroke:#000000;stroke-width:1.5"
+       width="145.59669"
+       x="389"
+       y="207"
+       id="rect37" />
+    <rect
+       fill="#f1f1f1"
+       height="40.5938"
+       rx="5"
+       ry="5"
+       style="stroke:#f1f1f1;stroke-width:1.5"
+       width="179.7354"
+       x="372"
+       y="266"
+       id="rect38" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="30.7754"
+       x="377"
+       y="280.99509"
+       id="text38">size</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="30.590799"
+       x="467.19241"
+       y="280.99509"
+       id="text39">6MB</text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="462.19241"
+       x2="462.19241"
+       y1="266"
+       y2="286.29691"
+       id="line39" />
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="372"
+       x2="551.73541"
+       y1="286.29691"
+       y2="286.29691"
+       id="line40" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       lengthAdjust="spacing"
+       textLength="80.192398"
+       x="377"
+       y="301.29199"
+       id="text40">resolution</text>
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="79.542999"
+       x="467.19241"
+       y="301.29199"
+       id="text41">2048x1365</text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="462.19241"
+       x2="462.19241"
+       y1="286.29691"
+       y2="306.59381"
+       id="line41" />
+    <rect
+       fill="#ffffff"
+       fill-opacity="0"
+       height="40.5938"
+       rx="5"
+       ry="5"
+       style="stroke:#000000;stroke-width:1.5"
+       width="179.7354"
+       x="372"
+       y="266"
+       id="rect41" />
+    <rect
+       fill="#f1f1f1"
+       height="60.890598"
+       rx="5"
+       ry="5"
+       style="stroke:#f1f1f1;stroke-width:1.5"
+       width="76.780296"
+       x="423.5"
+       y="325"
+       id="rect42" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="66.780296"
+       x="428.5"
+       y="339.99509"
+       id="text42">mountain</text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="423.5"
+       x2="500.2803"
+       y1="345.29691"
+       y2="345.29691"
+       id="line42" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="50.5928"
+       x="428.5"
+       y="360.29199"
+       id="text43">sunrise</text>
+    <line
+       style="stroke:#000000;stroke-width:1"
+       x1="423.5"
+       x2="500.2803"
+       y1="365.59381"
+       y2="365.59381"
+       id="line43" />
+    <text
+       fill="#000000"
+       font-family="sans-serif"
+       font-size="14px"
+       lengthAdjust="spacing"
+       textLength="46.183601"
+       x="428.5"
+       y="380.5889"
+       id="text44">nature</text>
+    <rect
+       fill="#ffffff"
+       fill-opacity="0"
+       height="60.890598"
+       rx="5"
+       ry="5"
+       style="stroke:#000000;stroke-width:1.5"
+       width="76.780296"
+       x="423.5"
+       y="325"
+       id="rect44" />
+    <path
+       d="m 323,88.5 h 13 c 20.5456,0 17.9276,-19.2269 36,-29 5.253,-2.8407 10.8312,-5.4615 16.5345,-7.8673"
+       fill="#ffffff"
+       fill-opacity="0"
+       style="stroke:#000000;stroke-width:1;stroke-dasharray:3, 3"
+       id="path44" />
+    <path
+       d="m 389.7076,54.5431 1.0097,-3.7903 -3.3559,-2.0306 8.4491,-0.0223 -6.1029,5.8432"
+       fill="#000000"
+       style="stroke:#000000;stroke-width:1"
+       id="path45" />
+    <circle
+       cx="323"
+       cy="88.5"
+       fill="#000000"
+       style="stroke:#000000;stroke-width:1"
+       id="ellipse45"
+       r="3" />
+    <path
+       d="m 323,108.5 h 13 c 9.3027,0 18.9499,-0.5167 28.5752,-1.3796"
+       fill="#ffffff"
+       fill-opacity="0"
+       style="stroke:#000000;stroke-width:1;stroke-dasharray:3, 3"
+       id="path46" />
+    <path
+       d="m 364.8804,110.2034 2.0071,-3.3119 -2.6175,-2.8541 8.0128,2.32 -7.4024,3.846"
+       fill="#000000"
+       style="stroke:#000000;stroke-width:1"
+       id="path47" />
+    <circle
+       cx="323"
+       cy="108.5"
+       fill="#000000"
+       style="stroke:#000000;stroke-width:1"
+       id="ellipse47"
+       r="3" />
+    <path
+       d="m 323,129.5 h 13 c 26.4338,0 55.214,6.1831 78.5378,12.8392"
+       fill="#ffffff"
+       fill-opacity="0"
+       style="stroke:#000000;stroke-width:1;stroke-dasharray:3, 3"
+       id="path48" />
+    <path
+       d="m 413.6696,145.2876 3.0795,-2.2973 -1.3431,-3.5995 6.5028,5.1189 -8.2392,0.7779"
+       fill="#000000"
+       style="stroke:#000000;stroke-width:1"
+       id="path49" />
+    <circle
+       cx="323"
+       cy="129.5"
+       fill="#000000"
+       style="stroke:#000000;stroke-width:1"
+       id="ellipse49"
+       r="3" />
+    <path
+       d="m 21,157.5 h 13 c 24.5744,0 49.7569,-6.3953 72.8997,-15.2919"
+       fill="#ffffff"
+       fill-opacity="0"
+       style="stroke:#000000;stroke-width:1;stroke-dasharray:3, 3"
+       id="path50" />
+    <path
+       d="m 108.0345,145.0536 0.9993,-3.6966 -3.2689,-1.9945 8.2486,0.009 -5.979,5.6825"
+       fill="#000000"
+       style="stroke:#000000;stroke-width:1"
+       id="path51" />
+    <circle
+       cx="21"
+       cy="157.5"
+       fill="#000000"
+       style="stroke:#000000;stroke-width:1"
+       id="ellipse51"
+       r="3" />
+    <path
+       d="m 302,246.5 h 13 c 21.795,0 45.2635,-2.0937 66.8928,-4.891"
+       fill="#ffffff"
+       fill-opacity="0"
+       style="stroke:#000000;stroke-width:1;stroke-dasharray:3, 3"
+       id="path52" />
+    <path
+       d="m 382.2994,244.6362 1.8638,-3.3322 -2.677,-2.7223 7.9746,2.0107 -7.1614,4.0438"
+       fill="#000000"
+       style="stroke:#000000;stroke-width:1"
+       id="path53" />
+    <circle
+       cx="302"
+       cy="246.5"
+       fill="#000000"
+       style="stroke:#000000;stroke-width:1"
+       id="ellipse53"
+       r="3" />
+    <path
+       d="m 302,266.5 h 13 c 16.139,0 33.1869,1.2063 49.7239,3.0264"
+       fill="#ffffff"
+       fill-opacity="0"
+       style="stroke:#000000;stroke-width:1;stroke-dasharray:3, 3"
+       id="path54" />
+    <path
+       d="m 364.3729,272.5492 2.6181,-2.7596 -1.9162,-3.286 7.2061,3.9001 -7.908,2.1455"
+       fill="#000000"
+       style="stroke:#000000;stroke-width:1"
+       id="path55" />
+    <circle
+       cx="302"
+       cy="266.5"
+       fill="#000000"
+       style="stroke:#000000;stroke-width:1"
+       id="ellipse55"
+       r="3" />
+    <path
+       d="m 302,287.5 h 13 c 28.4236,0 31.2933,16.8729 57,29 14.4909,6.8361 30.4837,13.9414 44.8932,20.1849"
+       fill="#ffffff"
+       fill-opacity="0"
+       style="stroke:#000000;stroke-width:1;stroke-dasharray:3, 3"
+       id="path56" />
+    <path
+       d="m 415.6969,339.4582 3.2762,-1.876 -0.8835,-3.6705 5.7367,5.7641 -8.1294,-0.2176"
+       fill="#000000"
+       style="stroke:#000000;stroke-width:1"
+       id="path57" />
+    <circle
+       cx="302"
+       cy="287.5"
+       fill="#000000"
+       style="stroke:#000000;stroke-width:1"
+       id="ellipse57"
+       r="3" />
+    <path
+       d="m 21,177.5 h 13 c 24.5744,0 49.7569,6.3953 72.8997,15.2919"
+       fill="#ffffff"
+       fill-opacity="0"
+       style="stroke:#000000;stroke-width:1;stroke-dasharray:3, 3"
+       id="path58" />
+    <path
+       d="m 105.7649,195.6375 3.2689,-1.9945 -0.9993,-3.6966 5.979,5.6825 -8.2486,0.009"
+       fill="#000000"
+       style="stroke:#000000;stroke-width:1"
+       id="path59" />
+    <circle
+       cx="21"
+       cy="177.5"
+       fill="#000000"
+       style="stroke:#000000;stroke-width:1"
+       id="ellipse59"
+       r="3" />
+    <!--SRC=[VP9DJyCm38Rl-HNMJd0OQhjrZ9qG311ZrIR6k9lMR16jKoNE-FZrf6NZ6sw9xTT-dpZ7Jj3ACrObg2umLZI2piAp8u7PXYp8cc2M4t970THh8-Qo22LnqkkdJSZNfS62x2YSOTTWWammDjHfWzwHRKM3m-5HrFQnfYOhcjoRpEcNHfPc9syAIywKNhJXPjHH4Zt5qR1L2gwscYvqIkJ2vLXlvuI8Qvs_Nnd5sv1z9ykCPq7D412jTlGLAcqC_Wrbra5NQLb_muhZ9EdzWpNu5Ik9-iEdk3T8Vs1LMvEVgNPcls0fE2OkckKfDG-F8Sji2c5fBao0-229alGWlYF1EDfRyWERHuRSLBKk2KHNjA_sBkPJSCRRdA3GJgo-Q_tjgmbk4Aw34Tt0pshYoVXg5u0ptcXhk28MDRdDFWe6_Uw95bYGRJxFRQR6T8- -bA38JQ5vDOBbpNbtgAR8Au-hq9jOdJR4zZda5gy0]-->
+  </g>
+</svg>

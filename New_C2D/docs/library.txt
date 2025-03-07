@@ -1,0 +1,3 @@
+//Web sequence
+https://github.com/davidje13/SequenceDiagram
+npm install --save svg-sequence-diagram
