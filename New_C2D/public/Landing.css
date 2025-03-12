@@ -297,7 +297,7 @@ nav {
   border-bottom: 2px solid rgba(36, 140, 201, 0.466);
   /* Add the line under the button */
   transition: background 0.3s ease, border-color 0.3s ease;
-  width: 250px;
+  width: 240px;
   letter-spacing: 1.2px;
   font-weight: 540;
 }
@@ -454,8 +454,9 @@ nav {
   justify-content: space-between;
   position: relative;
   width: 470px;
-  margin: 0 auto;
-  padding: 40px 0;
+  padding: 50px 0;
+  column-gap: 41.5%;
+  margin-right: 2.7%;
 }
 
 .steps-indicator-2 {
@@ -577,6 +578,7 @@ nav {
 }
 
 
+
 .highlight-hexagon {
   font-weight: bold;
   transition: all 0.3s;
@@ -604,7 +606,7 @@ nav {
   left: 50%;
   top: 0;
   width: 3.5px;
-  height: 8850px;
+  height: 8800px;
   background: linear-gradient(to bottom,
       #e4f4fb 0%,
       #a2cee4 5%,
@@ -1169,43 +1171,32 @@ nav {
   }
 }
 
-/* Slider container */
-.slider {
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 1000px;
+.slide-track {
   display: flex;
-  align-items: center;
+  width: calc(200%); /* Ensures smooth infinite loop */
+  animation: scroll 10s linear infinite;
 }
 
-/* Moving track */
-.slider .slide-track {
-  display: flex;
-  width: calc(250px * 6 * 2);
-  /* Double width for seamless looping */
-  animation: scroll 20s linear infinite;
-}
-
-/* Individual slide */
-.slider .slide {
-  height: 100px;
-  width: 250px;
+.slide {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
+  padding: 0 20px;
 }
 
-/* Smooth scrolling animation */
+.slider {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
 @keyframes scroll {
   from {
     transform: translateX(0);
   }
-
   to {
-    transform: translateX(calc(-250px * 6));
+    transform: translateX(-50%);
   }
 }
 
@@ -1215,12 +1206,11 @@ footer {
 }
 
 .footer-content {
-  display: flex;
+  display: -webkit-box;
   flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1000px;
-  margin: auto;
   padding-bottom: 20px;
+  margin-left: 10%;
+column-gap: 5.5%;
 }
 
 .footer-section {
@@ -1293,107 +1283,131 @@ footer {
   opacity: 0.8;
 }
 
-f .footer-diagram {
+.footer-diagram {
   display: flex;
   margin-top: 10%;
 }
 
-.static-center-circle-2 {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, -500%);
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  margin-top: 75px;
-  z-index: 1;
-  /* Ensure the circle appears on top */
-  background: radial-gradient(rgb(14 140 185 / 58%), rgb(255 255 255 / 3%));
-  transition: background-color 0.3s;
-
-  @media screen and (max-width: 768px) {
-    margin-top: 80px;
-  }
-}
-
-.u-shaped-line-2 {
-  position: absolute;
-  top: 10%;
-  left: 49.3%;
-  transform: translate(-50%, -90%);
-  width: 400px;
-  height: 40px;
-  border: 2px solid #6a99b8;
-  border-bottom: none;
-}
-
-.middle-line-2 {
-  position: absolute;
-  bottom: 0x;
-  /* top: 2px; */
-  left: 50%;
-  width: 2px;
-  height: 70px;
-  /* Adjust height as needed */
-  background: #6a99b8;
-  transform: translate(-50%, -120%);
-}
-
 .middle-line-3 {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 50%;
-  width: 1px;
+  width: 3px;
   height: 1000px;
-  /* Adjust height as needed */
-  background: #a9cce3;
-  transform: translate(-50%, 200.4%);
+  /* Full viewport height */
+  background: linear-gradient(to bottom,
+      #96cfe742 0%,
+      #a2cee456 5%,
+      #0a2162c4 15%,
+      #0a2262 86%,
+      #00f7ff00 100%);
+  transform: translateX(-50%);
+}
+
+
+.scroll-line-2 {
+  position: absolute;
+  width: 3px;
+  height: 200px;
+  background: linear-gradient(to bottom, #0a216229, #0cfbff, #0a216229);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  box-shadow: 0 0 5px #82fcfc5d, 0 0 5px #59e9e9;
+  transition: top 0.2s ease-in-out;
 }
 
 .about-us-div {
   position: absolute;
-  bottom: 0;
-  left: 55%;
-  height: 100px;
-  transform: translate(10%, 1300%);
-  font-size: 20px;
-  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 250px;
+  /* Large space between circles */
+  width: 100%;
 }
 
-.about-us-button {
-  position: relative;
-  width: 150px;
-  height: 35px;
-  border-radius: 15px;
-  background: #84c3ec;
-  border: none;
-  font-size: 16px;
-  transition: box-shadow 0.3s ease, background 0.3s ease;
-  color: white;
 
-  &:hover {
-    background: radial-gradient(#2395f3, #083253);
-    box-shadow: 0 0 15px 2px rgba(149, 203, 247, 0.6);
-    /* Glow effect */
-    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5),
-      0 0 10px rgba(255, 255, 255, 0.671);
-    /* Glow behind text */
-  }
+.about-us-button {
+  position: absolute;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  background-color: #5089ba;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10.5%;
+  text-decoration: none;
+}
+
+
+.about-us-button.button-highlight {
+  transform: scale(1.2);
+  background: linear-gradient(to right,
+      rgba(63, 169, 245, 0.904),
+      rgb(0, 255, 255, 0.4),
+      rgb(0, 255, 255, 0.4),
+      rgb(63, 169, 245, 0.4),
+      rgba(31, 77, 133, 0.856));
+  color: rgb(8, 36, 95);
+  border: none;
 }
 
 .about-us-text {
-  color: #e1e8f5;
+  font-size: 20px;
+  color: #062f53;
+  font-weight: 600;
+  text-align: end;
+  margin-top: 20px;
+  transform: translate(80%, 10%);
+
+}
+
+
+.subscribe-text {
+  position: relative;
+  font-size: 20px;
+  color: #062f53;
+  font-weight: 600;
+  text-align: end;
+  transform: translate(-90%, 100%);
 }
 
 .subscribe-button {
-  position: relative;
-  right: 150px;
-  transform: translate(-100%, 200%);
+  position: absolute;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  background-color: #5089ba;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  right: 62%;
+  margin-top: 2%;
+  text-decoration: none;
+
 }
 
-.join-button {
-  position: relative;
-  transform: translate(-10%, 400%);
+.center-circle-2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 50%;
+  transition: transform 0.2s ease, background-color 0.3s;
+  /* margin-bottom: 150px; */
+  /* Adds space between circles */
+}
+
+.center-circle-2.highlight {
+  background-color: #0cfbff;
+  box-shadow: 0 0 10px 2px #0cfbff;
 }
 
 .about-us {
