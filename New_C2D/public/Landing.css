@@ -276,7 +276,7 @@ nav {
   margin: 0 0;
   justify-content: center;
   margin-top: 70px;
-  margin-bottom: -3px;
+  margin-bottom: -100px;
 }
 
 .dropdown {
@@ -697,6 +697,7 @@ nav {
 .right-hexagon {
   top: 80px;
   left: 120%;
+
 }
 
 .hexagon-text-left,
