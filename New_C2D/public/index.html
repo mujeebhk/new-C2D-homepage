@@ -899,8 +899,7 @@
       const loadingLine = document.querySelector(".loading-line");
       const animationDuration = 400; // Time to highlight each circle in ms
       const section = document.getElementById("imagine-code-see"); // Target section
-      //let animationTriggered = false; // Ensure the animation triggers only once
-      let reset = false;
+      const totalTime = circles.length * animationDuration
 
       // Reset all styles (circles, texts, and the loading line)
       const resetStyles = () => {
@@ -915,7 +914,6 @@
       // Animate the circles, texts, and the loading line
       const animateSteps = () => {
         // Show the loading line and animate it
-       // resetStyles()
         loadingLine.style.opacity = "1";
         loadingLine.style.animation = `moveLine ${circles.length * animationDuration}ms linear forwards`;
 
@@ -926,6 +924,7 @@
               circles[index - 1].classList.remove("highlighted");
               texts[index - 1].classList.remove("highlighted"); // Reset the previous text
             }
+
             // Highlight the current circle and text
             circle.classList.add("highlighted");
             texts[index].classList.add("highlighted");
@@ -933,39 +932,16 @@
             // Reset all styles after the last animation
             if (index === circles.length - 1) {
               setTimeout(() => {
-                resetStyles(); // Reset styles
+                resetStyles(); // Reset styles        
               }, animationDuration);
-              reset = true;
+             
             }
           }, index * animationDuration); // Delay between each circle animation
         });
         console.log("animate")
       };
-      //
-      // 
       animateSteps();
-      if (reset){
-        setInterval(animateSteps, 5000)
-      }
-      
-      // Scroll-trigger logic
-     /* const onScroll = () => {
-        const sectionTop = section.getBoundingClientRect().top;
-        const viewportHeight = window.innerHeight;
-
-        // Trigger animation only when section is in the viewport
-        if (sectionTop < viewportHeight && sectionTop >= 0 && !animationTriggered) {
-          animationTriggered = true; // Ensure the animation triggers only once
-          animateSteps(); // Start the animation
-        }
-      };*/
-
-      // Attach the scroll listener
-      //window.addEventListener("scroll", onScroll);
-
-      // Check if the section is already visible when the page loads
-      //onScroll();
-     
+      setInterval(animateSteps, totalTime + 5000)     
     });
 
 
