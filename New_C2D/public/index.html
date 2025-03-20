@@ -899,7 +899,8 @@
       const loadingLine = document.querySelector(".loading-line");
       const animationDuration = 400; // Time to highlight each circle in ms
       const section = document.getElementById("imagine-code-see"); // Target section
-      let animationTriggered = false; // Ensure the animation triggers only once
+      //let animationTriggered = false; // Ensure the animation triggers only once
+      let reset = false;
 
       // Reset all styles (circles, texts, and the loading line)
       const resetStyles = () => {
@@ -914,6 +915,7 @@
       // Animate the circles, texts, and the loading line
       const animateSteps = () => {
         // Show the loading line and animate it
+       // resetStyles()
         loadingLine.style.opacity = "1";
         loadingLine.style.animation = `moveLine ${circles.length * animationDuration}ms linear forwards`;
 
@@ -933,13 +935,21 @@
               setTimeout(() => {
                 resetStyles(); // Reset styles
               }, animationDuration);
+              reset = true;
             }
           }, index * animationDuration); // Delay between each circle animation
         });
+        console.log("animate")
       };
-
+      //
+      // 
+      animateSteps();
+      if (reset){
+        setInterval(animateSteps, 5000)
+      }
+      
       // Scroll-trigger logic
-      const onScroll = () => {
+     /* const onScroll = () => {
         const sectionTop = section.getBoundingClientRect().top;
         const viewportHeight = window.innerHeight;
 
@@ -948,13 +958,14 @@
           animationTriggered = true; // Ensure the animation triggers only once
           animateSteps(); // Start the animation
         }
-      };
+      };*/
 
       // Attach the scroll listener
-      window.addEventListener("scroll", onScroll);
+      //window.addEventListener("scroll", onScroll);
 
       // Check if the section is already visible when the page loads
-      onScroll();
+      //onScroll();
+     
     });
 
 
