@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <link rel="stylesheet" href="Landing.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -51,8 +52,18 @@
     </nav>
   </header>
 
+  <a href="#vision-mission-values" id="scrollDownBtn">
+    <i class="fa-solid fa-circle-chevron-down fa-3x"></i>
+  </a>
+  
+
+  <a href="#hero" id="scrollUpBtn">
+    <i class="fa-solid fa-circle-chevron-up fa-3x"></i>
+  </a>
+
   <main class="content">
-    <section class="hero">
+    
+    <section class="hero" id="hero">
       <div class="hero-wrapper">
         <img src="vid/hero-gif-2.gif" alt="Hero GIF" class="hero-video">
       </div>
@@ -118,6 +129,11 @@
       </div>
     </section>
 
+    
+   
+   
+    
+
     <section class="steps" id="imagine-code-see">
 
       <div class="steps-indicator">
@@ -137,7 +153,7 @@
         <div class="base-line"></div>
         <div class="loading-line"></div>
       </div>
-
+      
 
       <div class="container-lines">
         <div class="middle-line"></div>
@@ -668,7 +684,7 @@
 
     <section id="blog" style="margin-top: 1000px;">
     </section>
-    <section>
+    <section class="before-footer">
       <div>
         <h2 class="h5-text"> Trusted by leading engineering teams globally</h>
       </div>
@@ -695,7 +711,7 @@
 
     <footer class="footer" style="margin-top: 150px;">
       <div class="footer-content">
-        <div class="footer-section">
+        <div class="footer-section" id="footer-section">
           <h4>Explore</h4>
           <ul>
             <li><a href="https://code2diagram.com/console">About us</a></li>
@@ -737,7 +753,7 @@
     </footer>
 
   </main>
-  <script>
+    <script>
 
 
     // window.addEventListener("load", function () {
@@ -1093,6 +1109,55 @@
         circlePositions = getCirclePositions();
         handleScroll();
       }, 100); // Small delay to ensure accurate positioning
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const scrollBtn = document.getElementById("scrollDownBtn");
+    const showSection = document.getElementById("imagine-code-see");
+    const hideSection = document.getElementById("vision-mission-values");
+
+    function checkVisibility() {
+        let showRect = showSection.getBoundingClientRect();
+        let hideRect = hideSection.getBoundingClientRect();
+        let viewportHeight = window.innerHeight;
+
+        // Show the button when we scroll past "imagine-code-see"
+        if (showRect.top < viewportHeight && hideRect.top > viewportHeight) {
+            scrollBtn.style.opacity = "1";
+            scrollBtn.style.visibility = "visible";
+        } else {
+            scrollBtn.style.opacity = "0";
+            scrollBtn.style.visibility = "hidden";
+        }
+    }
+
+    window.addEventListener("scroll", checkVisibility);
+    checkVisibility(); // Run once when the page loads
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const scrollBtn = document.getElementById("scrollUpBtn");
+    const showSection = document.getElementById("footer-section");
+    //const hideSection = document.getElementById("vision-mission-values");
+
+    function checkVisibility() {
+        let showRect = showSection.getBoundingClientRect();
+        //let hideRect = hideSection.getBoundingClientRect();
+        let viewportHeight = window.innerHeight;
+
+        // Show the button when we scroll past "imagine-code-see"
+        if (showRect.top < viewportHeight) {
+            scrollBtn.style.opacity = "1";
+            scrollBtn.style.visibility = "visible";
+        } else {
+            scrollBtn.style.opacity = "0";
+            scrollBtn.style.visibility = "hidden";
+        }
+    }
+
+    window.addEventListener("scroll", checkVisibility);
+    checkVisibility(); // Run once when the page loads
     });
 
 
