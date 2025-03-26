@@ -1005,24 +1005,9 @@
           }, index * animationDuration); // Delay between each circle animation
         });
       };
-
-      // Scroll-trigger logic
-      const onScroll = () => {
-        const sectionTop = section.getBoundingClientRect().top;
-        const viewportHeight = window.innerHeight;
-
-        // Trigger animation only when section is in the viewport
-        if (sectionTop < viewportHeight && sectionTop >= 0 && !animationTriggered) {
-          animationTriggered = true; // Ensure the animation triggers only once
-          animateSteps(); // Start the animation
-        }
-      };
-
-      // Attach the scroll listener
-      window.addEventListener("scroll", onScroll);
-
-      // Check if the section is already visible when the page loads
-      onScroll();
+      
+      animateSteps();
+      setInterval(animateSteps, totalTime + 5000)  
     });
 
 
