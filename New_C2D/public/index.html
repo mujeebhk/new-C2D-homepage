@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <link rel="stylesheet" href="Landing.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -28,6 +29,7 @@
   </div>
 
   <!-- Header and Navigation -->
+
   <header>
     <nav>
       <div class="nav-container">
@@ -51,8 +53,13 @@
     </nav>
   </header>
 
+  <a href="#hero" id="scrollUpBtn">
+    <i class="fa-solid fa-circle-chevron-up fa-3x"></i>
+  </a>
+
   <main class="content">
-    <section class="hero">
+
+    <section class="hero" id="hero">
       <div class="hero-wrapper">
         <img src="vid/hero-gif-2.gif" alt="Hero GIF" class="hero-video">
       </div>
@@ -63,7 +70,7 @@
       <div class="text-style">
         <h4><a href="#imagine-code-see" type="button" class="lets-explore"> Let's explore the diagrams </a></h4>
       </div>
-      <a href="https://code2diagram.com/console" type="button" class="getstarted-a" style="border-radius: 20px ">
+      <a href="https://code2diagram.com/console" type="button" class="getstarted-a">
         GET STARTED
       </a>
     </section>
@@ -120,6 +127,11 @@
       </div>
     </section>
 
+    
+   
+   
+    
+
     <section class="steps" id="imagine-code-see">
 
       <div class="steps-indicator">
@@ -139,7 +151,7 @@
         <div class="base-line"></div>
         <div class="loading-line"></div>
       </div>
-
+      
 
       <div class="container-lines">
         <div class="middle-line"></div>
@@ -651,7 +663,7 @@
 
     <section id="blog" style="margin-top: 1000px;">
     </section>
-    <section>
+    <section class="before-footer">
       <div>
         <h2 class="h5-text"> Trusted by leading engineering teams globally</h>
       </div>
@@ -678,7 +690,7 @@
 
     <footer class="footer" style="margin-top: 150px;">
       <div class="footer-content">
-        <div class="footer-section">
+        <div class="footer-section" id="footer-section">
           <h4>Explore</h4>
           <ul>
             <li><a href="https://code2diagram.com/console">About us</a></li>
@@ -720,7 +732,7 @@
     </footer>
 
   </main>
-  <script>
+    <script>
 
 
     // window.addEventListener("load", function () {
@@ -846,6 +858,7 @@
               // Remove scaling when the hexagon's opacity is restored
               if (hexagonTextLeft) hexagonTextLeft.classList.remove("scale-up");
               if (rightHexagon) rightHexagon.classList.remove("scale-up");
+              
 
               if (circleData.timeoutId) {
                 clearTimeout(circleData.timeoutId);
@@ -854,7 +867,15 @@
 
               circleData.isHighlighted = false;
             }
-          }
+
+            
+              
+          } 
+
+          /*if(!isHighlighted){
+              if (hexagonTextLeft) hexagonTextLeft.classList.remove("scale-up");
+              if (rightHexagon) rightHexagon.classList.remove("scale-up");
+          }*/
         });
       };
 
@@ -920,9 +941,10 @@
       const circles = document.querySelectorAll(".circle");
       const texts = document.querySelectorAll(".circle-text");
       const loadingLine = document.querySelector(".loading-line");
-      const animationDuration = 400; // Time to highlight each circle in ms
+      const animationDuration = 600; // Time to highlight each circle in ms
       const section = document.getElementById("imagine-code-see"); // Target section
-      let animationTriggered = false; // Ensure the animation triggers only once
+      const totalTime = circles.length * animationDuration
+      let animationTriggered = false
 
       // Reset all styles (circles, texts, and the loading line)
       const resetStyles = () => {
@@ -947,6 +969,7 @@
               circles[index - 1].classList.remove("highlighted");
               texts[index - 1].classList.remove("highlighted"); // Reset the previous text
             }
+
             // Highlight the current circle and text
             circle.classList.add("highlighted");
             texts[index].classList.add("highlighted");
@@ -954,8 +977,9 @@
             // Reset all styles after the last animation
             if (index === circles.length - 1) {
               setTimeout(() => {
-                resetStyles(); // Reset styles
+                resetStyles(); // Reset styles        
               }, animationDuration);
+             
             }
           }, index * animationDuration); // Delay between each circle animation
         });
@@ -970,14 +994,15 @@
         if (sectionTop < viewportHeight && sectionTop >= 0 && !animationTriggered) {
           animationTriggered = true; // Ensure the animation triggers only once
           animateSteps(); // Start the animation
+          setInterval(animateSteps, totalTime + 5000) //repeat every 5 seconds
         }
       };
 
       // Attach the scroll listener
       window.addEventListener("scroll", onScroll);
-
+      
       // Check if the section is already visible when the page loads
-      onScroll();
+      onScroll();       
     });
 
 
@@ -1067,6 +1092,32 @@
       }, 100); // Small delay to ensure accurate positioning
     });
 
+    document.addEventListener("DOMContentLoaded", function () {
+    const scrollBtn = document.getElementById("scrollUpBtn");
+    const showSection = document.getElementById("footer-section");
+    //const hideSection = document.getElementById("vision-mission-values");
+
+    function checkVisibility() {
+        let showRect = showSection.getBoundingClientRect();
+        //let hideRect = hideSection.getBoundingClientRect();
+        let viewportHeight = window.innerHeight;
+
+        // Show the button when we scroll past "imagine-code-see"
+        if (showRect.top < viewportHeight) {
+            scrollBtn.style.opacity = "1";
+            scrollBtn.style.visibility = "visible";
+            scrollBtn.style.transform = "translateY(0)"; 
+        } else {
+            scrollBtn.style.opacity = "0";
+            scrollBtn.style.visibility = "hidden";
+            scrollBtn.style.transform = "translateY(20px)"; 
+        }
+    }
+
+    window.addEventListener("scroll", checkVisibility);
+    checkVisibility(); // Run once when the page loads
+    });
+
 
 
 
@@ -1082,11 +1133,11 @@
       // Function to reset styles
       const resetStyles = () => {
         circles.forEach(circle => circle.classList.remove("highlighted"));
-        texts.forEach(text => text.classList.remove("highlighted", "scaled"));
+        texts.forEach(text => text.classList.remove("highlighted", "scaled", "scale-up"));
         loadingLine.style.opacity = "0";
         loadingLine.style.animation = "";
       };
-
+       
       // Function to animate steps sequentially
       const animateSteps = () => {
         loadingLine.style.opacity = "1";
@@ -1096,17 +1147,17 @@
           setTimeout(() => {
             if (index > 0) {
               circles[index - 1].classList.remove("highlighted");
-              texts[index - 1].classList.remove("highlighted", "scaled");
+              texts[index - 1].classList.remove("highlighted", "scaled", "scale-up");
             }
             circle.classList.add("highlighted");
-            texts[index].classList.add("highlighted", "scaled");
+            texts[index].classList.add("highlighted", "scaled" , );
 
             // After the animation ends, keep the first circle highlighted
             if (index === circles.length - 1) {
               setTimeout(() => {
                 resetStyles();
                 circles[0].classList.add("highlighted");
-                texts[0].classList.add("highlighted", "scaled");
+                texts[0].classList.add("highlighted", "scaled", );
               }, animationDuration);
             }
           }, index * animationDuration);
@@ -1131,7 +1182,7 @@
         step.addEventListener("click", () => {
           resetStyles();
           circles[index].classList.add("highlighted");
-          texts[index].classList.add("highlighted", "scaled");
+          texts[index].classList.add("highlighted", "scaled",);
 
           sections.forEach(section => section.classList.remove("active"));
           sections[index].classList.add("active");

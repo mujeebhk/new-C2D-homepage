@@ -21,18 +21,63 @@ body {
   background: linear-gradient(180deg, #E0F3FA, #E0F4FA, #D1EEFB, #D1EEFB 77%, #8fcbe5 85%, #7bb9d7, #68a7c9, #3973a0, #215484, #184676, #0f3869, #082c5b, #011738, #0B245E, #0A235E),
     radial-gradient(circle at 95% 96.5%, rgba(0, 2, 5, 0.747), transparent 6%) no-repeat;
   background-blend-mode: overlay;
-  backdrop-filter: blur(250px);
+  /*backdrop-filter: blur(250px);*/
   height: 100%;
   margin: 0;
   padding: 0;
+  
+
+  /* height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, #e3f2f9, #d0eefb, #d0eefb ),
+    linear-gradient(190deg, transparent , #d0eefb, #d0eefb ),
+    linear-gradient(to bottom left, #D0EEFB, #8fcbe5),
+    radial-gradient(circle at 90% 93%, #000205, transparent 70%) no-repeat,
+    linear-gradient(
+      to bottom,
+      transparent 80%,
+      #082253 90%,
+      #001f5b 95%,
+      #001b57 100%
+    );
+  background-blend-mode: overlay; */
+  /* background-color: #e3f2f9; */
 }
+
+
 
 .sign-btn {
   border-style: none;
 }
 
+#scrollUpBtn{
 
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 10px;
+  height: 10px;
+  padding: 15px 15px;
+  font-size: 16px;
+  background-color: none;
+  text-decoration: none;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index:10000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  
+}
 
+#scrollUpBtn i{
+  color: #398cbf;
+}
 
 .hero-wrapper {
   position: absolute;
@@ -222,7 +267,7 @@ nav {
   transition: background 0.3s, color 0.3s;
   font-weight: 600;
   width: 225px;
-  cursor: pointer;
+    cursor: pointer;
   text-align: center;
   color: white;
   margin-top: 20px;
@@ -231,6 +276,7 @@ nav {
 .custom-btn:hover {
   background: #026aa7;
 }
+
 
 .steps {
   display: flex;
@@ -575,6 +621,7 @@ nav {
 .container-lines {
   position: relative;
   padding-top: 100px;
+  
 }
 
 .middle-line {
