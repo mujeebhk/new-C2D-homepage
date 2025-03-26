@@ -29,6 +29,7 @@
   </div>
 
   <!-- Header and Navigation -->
+
   <header>
     <nav>
       <div class="nav-container">
@@ -62,7 +63,7 @@
   </a>
 
   <main class="content">
-    
+
     <section class="hero" id="hero">
       <div class="hero-wrapper">
         <img src="vid/hero-gif-2.gif" alt="Hero GIF" class="hero-video">
@@ -1125,9 +1126,11 @@
         if (showRect.top < viewportHeight && hideRect.top > viewportHeight) {
             scrollBtn.style.opacity = "1";
             scrollBtn.style.visibility = "visible";
+            scrollBtn.style.transform = "translateY(0px)";
         } else {
             scrollBtn.style.opacity = "0";
             scrollBtn.style.visibility = "hidden";
+            scrollBtn.style.transform = "translateY(20px)";
         }
     }
 
@@ -1150,9 +1153,11 @@
         if (showRect.top < viewportHeight) {
             scrollBtn.style.opacity = "1";
             scrollBtn.style.visibility = "visible";
+            scrollBtn.style.transform = "translateY(0)"; 
         } else {
             scrollBtn.style.opacity = "0";
             scrollBtn.style.visibility = "hidden";
+            scrollBtn.style.transform = "translateY(20px)"; 
         }
     }
 
