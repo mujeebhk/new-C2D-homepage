@@ -53,11 +53,6 @@
     </nav>
   </header>
 
-  <a href="#vision-mission-values" id="scrollDownBtn">
-    <i class="fa-solid fa-circle-chevron-down fa-3x"></i>
-  </a>
-  
-
   <a href="#hero" id="scrollUpBtn">
     <i class="fa-solid fa-circle-chevron-up fa-3x"></i>
   </a>
@@ -963,9 +958,10 @@
       const circles = document.querySelectorAll(".circle");
       const texts = document.querySelectorAll(".circle-text");
       const loadingLine = document.querySelector(".loading-line");
-      const animationDuration = 400; // Time to highlight each circle in ms
+      const animationDuration = 600; // Time to highlight each circle in ms
       const section = document.getElementById("imagine-code-see"); // Target section
       const totalTime = circles.length * animationDuration
+      let animationTriggered = false
 
       // Reset all styles (circles, texts, and the loading line)
       const resetStyles = () => {
@@ -1005,9 +1001,25 @@
           }, index * animationDuration); // Delay between each circle animation
         });
       };
+
+      // Scroll-trigger logic
+      const onScroll = () => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const viewportHeight = window.innerHeight;
+
+        // Trigger animation only when section is in the viewport
+        if (sectionTop < viewportHeight && sectionTop >= 0 && !animationTriggered) {
+          animationTriggered = true; // Ensure the animation triggers only once
+          animateSteps(); // Start the animation
+          setInterval(animateSteps, totalTime + 5000) //repeat every 5 seconds
+        }
+      };
+
+      // Attach the scroll listener
+      window.addEventListener("scroll", onScroll);
       
-      animateSteps();
-      setInterval(animateSteps, totalTime + 5000)  
+      // Check if the section is already visible when the page loads
+      onScroll();       
     });
 
 
@@ -1096,33 +1108,6 @@
         handleScroll();
       }, 100); // Small delay to ensure accurate positioning
     });
-
-    document.addEventListener("DOMContentLoaded", function () {
-    const scrollBtn = document.getElementById("scrollDownBtn");
-    const showSection = document.getElementById("imagine-code-see");
-    const hideSection = document.getElementById("vision-mission-values");
-
-    function checkVisibility() {
-        let showRect = showSection.getBoundingClientRect();
-        let hideRect = hideSection.getBoundingClientRect();
-        let viewportHeight = window.innerHeight;
-
-        // Show the button when we scroll past "imagine-code-see"
-        if (showRect.top < viewportHeight && hideRect.top > viewportHeight) {
-            scrollBtn.style.opacity = "1";
-            scrollBtn.style.visibility = "visible";
-            scrollBtn.style.transform = "translateY(0px)";
-        } else {
-            scrollBtn.style.opacity = "0";
-            scrollBtn.style.visibility = "hidden";
-            scrollBtn.style.transform = "translateY(20px)";
-        }
-    }
-
-    window.addEventListener("scroll", checkVisibility);
-    checkVisibility(); // Run once when the page loads
-    });
-
 
     document.addEventListener("DOMContentLoaded", function () {
     const scrollBtn = document.getElementById("scrollUpBtn");
