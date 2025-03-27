@@ -562,7 +562,7 @@
       </div>
     </section> -->
 
-    <section id="vision-mission-values" style="margin-top: 200px;">
+    <section class="steps" id="vision-mission-values" style="margin-top: 200px;">
 
       <div class="steps-indicator-2">
         <div class="step-2" data-target="about-us">
@@ -1166,7 +1166,7 @@
 
       // Scroll-triggered animation
       const onScroll = () => {
-        const section = document.getElementById("vision-mission-values");
+        const section = document.getElementById("");
         if (!section) return;
         const sectionTop = section.getBoundingClientRect().top;
         const viewportHeight = window.innerHeight;
@@ -1202,6 +1202,59 @@
 
 
 
+    document.addEventListener('DOMContentLoaded', () => {
+   const steps = document.querySelectorAll('.step-2');
+   const section = document.getElementById('vision-mission-values'); // Get the actual section by ID
+   let currentIndex = 0;
+   let isAnimating = false;
+ 
+   // Function to update the active step
+   const updateActiveStep = () => {
+     // Remove the active class from all steps
+     steps.forEach(step => step.classList.remove('step-active'));
+ 
+     // Add the active class to the current step
+     steps[currentIndex].classList.add('step-active');
+ 
+     // Move to the next step, reset to 0 after the last step
+     currentIndex = (currentIndex + 1) % steps.length;
+   };
+ 
+   // Set interval to change steps every 3 seconds (3000 ms)
+   const startAnimation = () => {
+     if (isAnimating) return;  // Prevent animation if it's already running
+     isAnimating = true;
+ 
+     updateActiveStep();  // Show the first step initially
+ 
+     const intervalId = setInterval(() => {
+       updateActiveStep();
+     }, 3000);
+ 
+     
+     setTimeout(() => {
+       clearInterval(intervalId);  // Stop the interval
+       steps[0].classList.add('step-active');  // Ensure Vision is active
+       isAnimating = false;  
+     }, 3000);  
+   };
+ 
+   
+   const observer = new IntersectionObserver((entries, observer) => {
+     entries.forEach(entry => {
+       // Check if the section is in view and the animation isn't already running
+       if (entry.isIntersecting && !isAnimating) {
+         console.log('Section is in view!');
+         startAnimation();
+         observer.disconnect();  // Stop observing after the animation starts
+       }
+     });
+   }, { threshold: 0.5 });  // Trigger when 50% of the section is in view
+ 
+   // Start observing the section
+   observer.observe(section);
+ 
+ });
 
 
 
@@ -1214,29 +1267,44 @@
 
 
 
-    document.addEventListener("DOMContentLoaded", () => {
-      const circles = document.querySelectorAll(".circle-2");
-      const texts = document.querySelectorAll(".circle-text2");
-      const loadingLine = document.querySelector(".loading-line-2");
-      const steps = document.querySelectorAll(".step-2");
-      const sections = document.querySelectorAll(".content-section");
-      const totalSteps = circles.length;
-      const animationDuration = 5000; // 5 seconds per step
 
-      let currentStep = 0;
 
-      const resetStyles = () => {
-        circles.forEach(circle => circle.classList.remove("highlighted"));
-        texts.forEach(text => text.classList.remove("highlighted", "scaled"));
-        sections.forEach(section => section.classList.remove("active"));
-      };
+ document.addEventListener("DOMContentLoaded", () => {
+  const circles = document.querySelectorAll(".circle-2");
+  const texts = document.querySelectorAll(".circle-text2");
+  const loadingLine = document.querySelector(".loading-line-2");
+  const steps = document.querySelectorAll(".step-2");
+  const sections = document.querySelectorAll(".content-section");
+  const section = document.getElementById("vision-mission-values");
+  const totalSteps = circles.length;
+  const animationDuration = 2000; // 5 seconds per step
 
-      const moveLoadingLine = (stepIndex) => {
-        const stepWidth = 100 / (totalSteps - 1);
-        loadingLine.style.width = `${stepIndex * stepWidth}%`;
-      };
+  let currentStep = 0;
+  let intervalId = null;
+  let isAnimating = false;
 
-      const animateSteps = () => {
+  const resetStyles = () => {
+    circles.forEach((circle) => circle.classList.remove("highlighted"));
+    texts.forEach((text) => text.classList.remove("highlighted", "scaled"));
+    sections.forEach((section) => section.classList.remove("active"));
+  };
+
+  const moveLoadingLine = (stepIndex) => {
+    const stepWidth = 100 / (totalSteps - 1);
+    loadingLine.style.width = `${stepIndex * stepWidth}%`;
+  };
+
+  const animateSteps = () => {
+    if (!isAnimating) {
+      isAnimating = true;
+      currentStep = 0;
+      resetStyles();
+      circles[0].classList.add("highlighted");
+      texts[0].classList.add("highlighted", "scaled");
+      sections[0].classList.add("active");
+      moveLoadingLine(0);
+
+      intervalId = setInterval(() => {
         if (currentStep < totalSteps) {
           resetStyles();
           circles[currentStep].classList.add("highlighted");
@@ -1244,23 +1312,40 @@
           sections[currentStep].classList.add("active");
           moveLoadingLine(currentStep);
           currentStep++;
-
-          setTimeout(animateSteps, animationDuration);
         } else {
-          setTimeout(() => {
-            resetStyles();
-            currentStep = 0;
-            circles[0].classList.add("highlighted");
-            texts[0].classList.add("highlighted", "scaled");
-            sections[0].classList.add("active");
-            moveLoadingLine(0);
-          }, animationDuration);
+          currentStep = 0;
         }
-      };
+      }, animationDuration);
+    }
+  };
 
-      animateSteps();
-    });
+  const stopAnimation = () => {
+    if (isAnimating) {
+      isAnimating = false;
+      clearInterval(intervalId);
+      resetStyles();
+      moveLoadingLine(0);
+    }
+  };
 
+  // Intersection Observer to trigger animation
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          console.log("Section is in view! Starting animation...");
+          animateSteps();
+        } else {
+          console.log("Section is out of view! Stopping animation...");
+          stopAnimation();
+        }
+      });
+    },
+    { threshold: 0.4 } // Animation starts when 40% of the section is visible
+  );
+
+  observer.observe(section);
+});
 
 
 
