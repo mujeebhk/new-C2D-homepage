@@ -912,6 +912,46 @@
 
 
 
+    document.addEventListener("DOMContentLoaded", function () {
+  const dropdownButton = document.querySelector(".dropdown button");
+  const dropdownContent = document.querySelector(".dropdown-content");
+
+  // Function to open dropdown
+  function openDropdown() {
+    dropdownContent.classList.add("open");
+  }
+
+  // Function to close dropdown
+  function closeDropdown() {
+    dropdownContent.classList.remove("open");
+  }
+
+  // Open dropdown on page load for 2 seconds
+  openDropdown();
+  setTimeout(closeDropdown, 2000);
+
+  // Toggle dropdown manually when button is clicked
+  dropdownButton.addEventListener("click", function (event) {
+    event.stopPropagation();
+    dropdownContent.classList.toggle("open");
+  });
+
+  // Close dropdown when clicking outside of it
+  document.addEventListener("click", function (event) {
+    if (!dropdownButton.contains(event.target) && !dropdownContent.contains(event.target)) {
+      closeDropdown();
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
 
 
 
