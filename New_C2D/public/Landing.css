@@ -13,7 +13,7 @@ body {
     display: table-row;
     background-blend-mode: unset;
     background: linear-gradient(to bottom, #E0F3FA, #E0F4FA, #D1EEFB 60%, #8EC7E0 70%, #446392, #193064, #0A235E);
-
+    
   }
 }
 
@@ -25,7 +25,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  
+ 
 
   /* height: 100%;
   width: 100%;
@@ -44,7 +44,9 @@ body {
   /* background-color: #e3f2f9; */
 }
 
-
+.content{
+  backdrop-filter: blur(250px);  
+}
 
 .sign-btn {
   border-style: none;

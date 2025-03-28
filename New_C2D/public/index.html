@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
   <title>Code2Diagram</title>
 
   <link rel="icon" href="favicon-light.ico" media="(prefers-color-scheme: light)">
@@ -27,10 +27,18 @@
       <div></div>
     </div>
   </div>
+ 
+  <a href="#header" id="scrollUpBtn">
+    <i class="fa-solid fa-circle-chevron-up fa-3x"></i>
+  </a>
 
-  <!-- Header and Navigation -->
+  
 
-  <header>
+  <main class="content">
+
+    <!-- Header and Navigation -->
+
+  <header id="header">
     <nav>
       <div class="nav-container">
         <div class="logo">
@@ -53,11 +61,6 @@
     </nav>
   </header>
 
-  <a href="#hero" id="scrollUpBtn">
-    <i class="fa-solid fa-circle-chevron-up fa-3x"></i>
-  </a>
-
-  <main class="content">
 
     <section class="hero" id="hero">
       <div class="hero-wrapper">
@@ -1134,15 +1137,12 @@
 
     document.addEventListener("DOMContentLoaded", function () {
     const scrollBtn = document.getElementById("scrollUpBtn");
-    const showSection = document.getElementById("footer-section");
-    //const hideSection = document.getElementById("vision-mission-values");
+    const showSection = document.getElementById("imagine-code-see");
 
     function checkVisibility() {
         let showRect = showSection.getBoundingClientRect();
-        //let hideRect = hideSection.getBoundingClientRect();
         let viewportHeight = window.innerHeight;
 
-        // Show the button when we scroll past "imagine-code-see"
         if (showRect.top < viewportHeight) {
             scrollBtn.style.opacity = "1";
             scrollBtn.style.visibility = "visible";
