@@ -918,10 +918,18 @@
     document.addEventListener("DOMContentLoaded", function () {
   const dropdownButton = document.querySelector(".dropdown button");
   const dropdownContent = document.querySelector(".dropdown-content");
+  let isPageLoad = true; // Flag to track page load
 
   // Function to open dropdown
   function openDropdown() {
     dropdownContent.classList.add("open");
+
+    // Scroll automatically ONLY on page load
+    if (isPageLoad) {
+      setTimeout(() => {
+        dropdownContent.scrollTo({ top: dropdownContent.scrollHeight, behavior: "smooth" });
+      }, 500); // Delay to ensure it opens before scrolling
+    }
   }
 
   // Function to close dropdown
@@ -931,9 +939,12 @@
 
   // Open dropdown on page load for 2 seconds
   openDropdown();
-  setTimeout(closeDropdown, 2000);
+  setTimeout(() => {
+    closeDropdown();
+    isPageLoad = false; // Set flag to false after initial auto-open
+  }, 2000);
 
-  // Toggle dropdown manually when button is clicked
+  // Toggle dropdown manually when button is clicked (no auto-scroll)
   dropdownButton.addEventListener("click", function (event) {
     event.stopPropagation();
     dropdownContent.classList.toggle("open");
@@ -946,13 +957,6 @@
     }
   });
 });
-
-
-
-
-
-
-
 
 
 
