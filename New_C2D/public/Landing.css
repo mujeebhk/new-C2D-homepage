@@ -2,10 +2,6 @@ html {}
 
 body {
   font-family: figtree;
-  /* overflow-x: hidden; */
-  /* font-weight: 600; */
-  /* background-image: url("img/background-img.jpg"); */
-  /* background: linear-gradient(to bottom, #E0F3FA, #E0F4FA, #D1EEFB, #8EC7E0, #112E5A, #0A131F, #0B245E, #0A235E); */
 }
 
 @media (max-width: 1230px) {
@@ -13,7 +9,7 @@ body {
     display: table-row;
     background-blend-mode: unset;
     background: linear-gradient(to bottom, #E0F3FA, #E0F4FA, #D1EEFB 60%, #8EC7E0 70%, #446392, #193064, #0A235E);
-    
+
   }
 }
 
@@ -25,34 +21,17 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
- 
-
-  /* height: 100%;
-  width: 100%;
-  background: linear-gradient(to bottom, #e3f2f9, #d0eefb, #d0eefb ),
-    linear-gradient(190deg, transparent , #d0eefb, #d0eefb ),
-    linear-gradient(to bottom left, #D0EEFB, #8fcbe5),
-    radial-gradient(circle at 90% 93%, #000205, transparent 70%) no-repeat,
-    linear-gradient(
-      to bottom,
-      transparent 80%,
-      #082253 90%,
-      #001f5b 95%,
-      #001b57 100%
-    );
-  background-blend-mode: overlay; */
-  /* background-color: #e3f2f9; */
 }
 
-.content{
-  backdrop-filter: blur(250px);  
+.content {
+  backdrop-filter: blur(250px);
 }
 
 .sign-btn {
   border-style: none;
 }
 
-#scrollUpBtn{
+#scrollUpBtn {
 
   position: fixed;
   bottom: 30px;
@@ -69,15 +48,15 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index:10000;
+  z-index: 10000;
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
   transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
-  
+
 }
 
-#scrollUpBtn i{
+#scrollUpBtn i {
   color: #398cbf;
 }
 
@@ -282,7 +261,6 @@ nav {
   margin: 0 0;
   justify-content: center;
   margin-top: 40px;
-  /* margin-bottom: -3px; */
 }
 
 .dropdown {
@@ -291,7 +269,6 @@ nav {
   z-index: 10;
 }
 
-/* Dropdown button */
 .dropdown button {
   color: #2e97c0;
   background: transparent;
@@ -310,10 +287,8 @@ nav {
 
 .dropdown button:hover {
   border-color: rgba(255, 255, 255, 0.8);
-  /* Highlight the line on hover */
 }
 
-/* Dropdown content */
 .dropdown-content {
   opacity: 0;
   visibility: hidden;
@@ -337,7 +312,6 @@ nav {
 }
 
 
-/* Custom scrollbar styling */
 .dropdown-content::-webkit-scrollbar {
   width: 8px;
 }
@@ -351,7 +325,6 @@ nav {
   background: #ffffff;
 }
 
-/* Dropdown links */
 .dropdown-content a {
   color: #62b6d8;
   padding: 10px 20px;
@@ -365,12 +338,10 @@ nav {
   color: #002366;
 }
 
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Container for centering */
 .search-container {
   display: flex;
   align-items: center;
@@ -379,87 +350,61 @@ nav {
   margin-top: 100px;
 }
 
-/* Dropdown styling */
 .search-input {
   appearance: none;
-  /* Remove default dropdown styling */
   border: none;
   border-bottom: 2px solid #5dade2;
-  /* Light blue underline */
   outline: none;
   font-size: 1em;
   padding: 5px 0;
   color: #62b5d7;
-  /* Text color */
   background: transparent;
-  /* Transparent background */
   width: 245px;
   text-align: center;
   transition: width 0.3s ease-in-out;
   cursor: pointer;
-  /* Pointer cursor for dropdown */
 }
 
-/* Focus state for dropdown */
 .search-input:focus {
   outline: none;
   border-color: #1c5983;
-  /* Darker border on focus */
 }
 
-/* Placeholder styling */
 .search-input option:disabled {
   color: #b3cde0;
   opacity: 0.3;
 }
 
-/* Dropdown options styling */
 .search-input option {
   background: rgba(77,
       75,
       75,
       0.349);
-  /* Semi-transparent white background for options */
   color: #3a8bbf;
-  /* Text color for options */
   padding: 10px;
   font-size: 1rem;
   backdrop-filter: blur(10px);
-  /* Optional blur effect */
 }
 
-/* Hover effect for dropdown options */
 .search-input option:hover {
   background-color: rgba(240,
       248,
       255,
       0.8);
-  /* Semi-transparent light blue on hover */
   color: #1c5983;
-  /* Darker text color */
 }
 
-/* Custom arrow */
 .search-input::after {
   content: "▼";
-  /* Custom dropdown arrow */
   position: absolute;
   right: 20px;
-  /* Space from the right edge */
   top: 50%;
   transform: translateY(-50%);
   font-size: 1rem;
   color: #3a8bbf;
   pointer-events: none;
-  /* Prevent interaction with the arrow */
 }
 
-/* 
-.text-style {
-  font-size: 37px;
-} */
-
-/* Steps Indicator Styling */
 .steps-indicator {
   display: flex;
   align-items: center;
@@ -515,14 +460,12 @@ nav {
   transition: width 1s ease-in-out;
 }
 
-/* Active Step Style */
 .step-active .circle-2 {
-  background-color: #ff6347; /* Highlight active circle color */
+  background-color: #ff6347;
   box-shadow: 0 3px 5px rgba(255, 99, 71, 0.4);
 }
 
 
-/* Base line */
 .base-line {
   position: absolute;
   top: 50%;
@@ -539,23 +482,19 @@ nav {
   top: 50%;
   left: 0;
   width: 0;
-  /* Starts with no width */
   height: 3px;
   background: linear-gradient(to left, #0a216229, #0cfbff, #0a216229);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.315);
   border-radius: 50px;
   transform: translateY(-50%);
   opacity: 0;
-  /* Hidden by default */
   mix-blend-mode: plus-lighter;
 }
 
-/* Step styling */
 .step {
   text-align: center;
   position: relative;
   z-index: 2;
-  /* Ensure circles appear above the line */
 }
 
 .circle {
@@ -568,7 +507,6 @@ nav {
 .circle.highlighted {
   background: radial-gradient(circle, #0cfbff, #072c72, #01163d);
   box-shadow: 0 5px 10px #031f1f;
-  /* Glowing cyan shadow */
   border-radius: 50%;
 }
 
@@ -636,7 +574,6 @@ nav {
 .highlight-hexagon {
   font-weight: bold;
   transition: all 0.3s;
-  /* Smooth transition for all properties */
 }
 
 
@@ -646,14 +583,13 @@ nav {
   background: radial-gradient(circle, rgb(255 255 255 / 0%), #4ec1bd57);
   opacity: 0.8;
   transition: background 0.3s ease;
-  /* Smooth transition for the gradient */
   transform: translate(-50%, -50%);
 }
 
 .container-lines {
   position: relative;
   padding-top: 100px;
-  
+
 }
 
 .middle-line {
@@ -701,7 +637,6 @@ nav {
 .hexagon-container {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
 
 .hexagon-hover {
@@ -736,7 +671,6 @@ nav {
   transform: scale(1.1);
 }
 
-/* Ensure smooth opacity transitions */
 .hexagon-group,
 .overlay-icon-left,
 .overlay-icon-right,
@@ -762,7 +696,6 @@ nav {
   font-weight: 600;
   font-size: 18px;
   color: #01225f;
-  /* display: block; */
   position: relative;
   text-align: center;
   white-space: nowrap;
@@ -803,7 +736,6 @@ nav {
   transition: filter 0.3s ease, box-shadow 0.5s ease;
 }
 
-/* When highlighted, intensify the glow */
 .overlay-icon-left.highlight,
 .overlay-icon-right.highlight {
   opacity: 0.9;
@@ -870,7 +802,6 @@ nav {
   transform: translate(-50%, -50%) scale(1);
 }
 
-/* Default glow effect */
 .hexagon-glow-left,
 .hexagon-glow-right {
   position: relative;
@@ -894,7 +825,6 @@ nav {
   mix-blend-mode: overlay;
 }
 
-/* When hexagon-glow-left gets highlighted */
 .hexagon-glow-left.highlight::after,
 .hexagon-glow-right.highlight::after {
   opacity: 0.8;
@@ -982,7 +912,6 @@ nav {
 .circle-2.highlighted {
   background: radial-gradient(circle, #0cfbff, #072c72, #01163d);
   box-shadow: 0 5px 10px #031f1f;
-  /* Glowing cyan shadow */
   border-radius: 50%;
 }
 
@@ -1052,7 +981,6 @@ nav {
   box-sizing: border-box;
 }
 
-/* When the section becomes active */
 .content-section.active {
   display: block;
   opacity: 1;
@@ -1076,7 +1004,6 @@ nav {
   text-align: center;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .tab-text {
     font-size: 14px;
@@ -1090,33 +1017,25 @@ nav {
 }
 
 
-/* Step labels */
 .step p {
   font-size: 0.9em;
   color: #5dade2;
-  /* Default label color */
   margin: 0;
 }
 
-/* Specific label styles */
 .step:nth-child(3) p {
   color: #0746b9;
   font-family: "figtree" sans-serif;
-  /* Light blue for 'Imagine' */
 }
 
 .step:nth-child(2) p {
   color: #3a8abe;
-  /* Light blue for 'Imagine' */
   font-family: "figtree" sans-serif;
-  /* Light blue for 'Imagine' */
 }
 
 .step:nth-child(1) p {
   color: #62b5d7;
-  /* Dark blue for 'See' */
   font-family: "figtree" sans-serif;
-  /* Light blue for 'Imagine' */
 }
 
 .container-lines-2 {
@@ -1126,85 +1045,16 @@ nav {
 
 .u-shaped-line {
   width: 320px;
-  /* Set the desired width */
   height: 60px;
-  /* Set the desired height */
   border: 2px solid #a9cce3;
-  /* Line thickness and color */
   border-top: none;
-  /* Remove the top border */
   margin-top: 30px;
   transition: border-color 0.3s ease;
-  /* Smooth transition for color change */
 }
 
 .u-shaped-line.animated {
   border-color: #62b5d7;
-  /* Highlighted color */
 }
-
-/* Center the SVG on the page */
-.svg-container {}
-
-/* General carousel styling */
-/* .carousel {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  margin: auto;
-  z-index: -1;
-  margin-top: -8.5%;
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  will-change: transform;
-}
-
-.carousel-slide {
-  min-width: 100%;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.carousel-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.carousel-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 20px;
-}
-
-.carousel-nav {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translate(-50%, -700%);
-  display: flex;
-  gap: 30px;
-}
-
-
-@media (max-width: 768px) {
-  .carousel-slide img {
-    object-fit: contain;
-  }
-}
-
-@media (max-width: 480px) {
-  .carousel-slide img {
-    object-fit: contain;
-  }
-} */
 
 .carousel {
   position: relative;
@@ -1212,7 +1062,6 @@ nav {
   width: 100%;
   margin: auto;
   z-index: 0;
-  /* Set it above other elements */
   margin-top: -8.5%;
   background: linear-gradient(to bottom, rgba(224, 244, 250, 0) 0%, #e0f4fa 100%);
 }
@@ -1227,8 +1076,6 @@ nav {
   align-items: center;
   justify-content: center;
 }
-
-
 
 .carousel-inner {
   display: flex;
@@ -1253,7 +1100,6 @@ nav {
   cursor: pointer;
   font-size: 20px;
   z-index: 10;
-  /* Ensure it's above other elements */
 }
 
 .carousel-text {
@@ -1280,7 +1126,6 @@ nav {
   margin-bottom: 5%;
 }
 
-/* Define the keyframes for the scroll animation */
 @keyframes scroll {
   0% {
     transform: translateX(-1750px);
@@ -1307,15 +1152,12 @@ nav {
   align-items: center;
 }
 
-/* Moving track */
 .slider .slide-track {
   display: flex;
   width: calc(250px * 6 * 2);
-  /* Double width for seamless looping */
   animation: scroll 20s linear infinite;
 }
 
-/* Individual slide */
 .slider .slide {
   height: 100px;
   width: 250px;
@@ -1412,7 +1254,6 @@ nav {
 
 .social-icon {
   background-color: #1da1f2;
-  /* default to Twitter blue */
   border-radius: 50%;
   color: white;
   display: flex;
@@ -1427,12 +1268,10 @@ nav {
 
 .social-icon.linkedin {
   background-color: #0077b5;
-  /* LinkedIn blue */
 }
 
 .social-icon.email {
   background-color: #6fc3df;
-  /* Light blue for email */
 }
 
 .social-icon:hover {
@@ -1508,7 +1347,6 @@ nav {
       rgba(0, 255, 255, 0.836),
       rgba(0, 255, 255, 0.836),
       rgba(63, 169, 245, 0.836));
-  /* transform: scale(1.2); */
   color: #002366;
   font-weight: 700;
   border: none;
@@ -1536,7 +1374,6 @@ nav {
 .subscribe-button {
   position: absolute;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  /* background-color: #002366; */
   color: white;
   padding: 12px 23px;
   border: none;
@@ -1557,8 +1394,6 @@ nav {
   background: transparent;
   border-radius: 50%;
   transition: transform 0.2s ease, background-color 0.3s;
-  /* margin-bottom: 150px; */
-  /* Adds space between circles */
 }
 
 .center-circle-2.highlight {
