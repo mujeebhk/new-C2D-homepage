@@ -1313,16 +1313,15 @@
 
 
 
- document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const circles = document.querySelectorAll(".circle-2");
   const texts = document.querySelectorAll(".circle-text2");
   const loadingLine = document.querySelector(".loading-line-2");
-  const steps = document.querySelectorAll(".step-2");
   const sections = document.querySelectorAll(".content-section");
   const section = document.getElementById("vision-mission-values");
-  const totalSteps = circles.length;
-  const animationDuration = 2000; // 5 seconds per step
 
+  const totalSteps = circles.length;
+  const animationDuration = 2000; // 2 seconds per step
   let currentStep = 0;
   let intervalId = null;
   let isAnimating = false;
@@ -1330,7 +1329,7 @@
   const resetStyles = () => {
     circles.forEach((circle) => circle.classList.remove("highlighted"));
     texts.forEach((text) => text.classList.remove("highlighted", "scaled"));
-    sections.forEach((section) => section.classList.remove("active"));
+    sections.forEach((sec) => sec.classList.remove("active"));
   };
 
   const moveLoadingLine = (stepIndex) => {
@@ -1341,34 +1340,38 @@
   const animateSteps = () => {
     if (!isAnimating) {
       isAnimating = true;
-      currentStep = 0;
       resetStyles();
-      circles[0].classList.add("highlighted");
-      texts[0].classList.add("highlighted", "scaled");
-      sections[0].classList.add("active");
-      moveLoadingLine(0);
+      currentStep = 0;
+      updateStep();
+      loadingLine.style.opacity = "1"; // Ensure it's visible
 
       intervalId = setInterval(() => {
         if (currentStep < totalSteps) {
-          resetStyles();
-          circles[currentStep].classList.add("highlighted");
-          texts[currentStep].classList.add("highlighted", "scaled");
-          sections[currentStep].classList.add("active");
+          updateStep();
           moveLoadingLine(currentStep);
           currentStep++;
         } else {
-          currentStep = 0;
+          clearInterval(intervalId);
+          isAnimating = false;
         }
       }, animationDuration);
     }
+  };
+
+  const updateStep = () => {
+    resetStyles();
+    circles[currentStep].classList.add("highlighted");
+    texts[currentStep].classList.add("highlighted", "scaled");
+    sections[currentStep].classList.add("active");
+    moveLoadingLine(currentStep);
   };
 
   const stopAnimation = () => {
     if (isAnimating) {
       isAnimating = false;
       clearInterval(intervalId);
-      resetStyles();
       moveLoadingLine(0);
+      loadingLine.style.opacity = "0"; // Hide the line when animation stops
     }
   };
 
@@ -1376,10 +1379,10 @@
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && !isAnimating) {
           console.log("Section is in view! Starting animation...");
           animateSteps();
-        } else {
+        } else if (!entry.isIntersecting) {
           console.log("Section is out of view! Stopping animation...");
           stopAnimation();
         }
@@ -1390,6 +1393,7 @@
 
   observer.observe(section);
 });
+
 
 
 
