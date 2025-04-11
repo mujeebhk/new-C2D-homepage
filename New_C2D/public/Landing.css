@@ -1510,3 +1510,237 @@ nav {
   padding-right: 250px;
   font-size: 25px;
 }
+
+
+
+
+
+
+
+
+.carousel-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0; /* was 40px */
+  min-height: 600px; /* Added this to increase vertical space */
+}
+
+
+.custom-carousel-wrapper {
+  position: relative;
+  width: 1000px; /* was 600px */
+  max-width: 90vw; /* keeps it responsive */
+  overflow: hidden;
+}
+
+
+.custom-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.custom-slide {
+  position: absolute;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  filter: blur(8px);
+  transform: scale(0.8);
+  z-index: 1;
+}
+
+/* Hexagon group */
+
+.hexagon-group-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px; /* was 220px */
+  height: 300px; /* was 220px */
+  padding-top: 90px;
+  padding-bottom: 60px; /* Add space to fit text */
+  overflow: visible; /* Make sure text is not clipped */
+}
+
+
+.hexagon-base {
+  width: 170px; /* match container */
+  height: 220px;
+  z-index: 1;
+}
+
+.hexagon-icon {
+  position: absolute;
+  width: 90px; /* was 70px */
+  height: 90px;
+  top: 35%; /* adjust for new size */
+  z-index: 2;
+}
+
+
+.hexagon-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  color: white; /* make sure the text contrasts the background */
+  font-size: 24px; /* bigger text */
+  bottom: 10px; /* more room below */
+}
+
+.hexagon-link-1 {
+  text-decoration: none;
+  color: #01225e;
+}
+
+/* Navigation buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+  border: none;
+  font-size: 32px; /* was 24px */
+  padding: 14px;
+  cursor: pointer;
+  z-index: 10;
+
+}
+
+.left-btn {
+  left: -10px;
+}
+
+.right-btn {
+  right: -10px;
+}
+
+/* Loading line
+.custom-loading-line {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.custom-loading-line::before {
+  content: "";
+  display: block;
+  height: 100%;
+  background-color: #333;
+  animation: custom-fill 4s linear infinite;
+} */
+
+@keyframes custom-fill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+
+
+.custom-slide.active {
+  position: relative;
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+  z-index: 3;
+}
+
+
+.custom-slide.prev {
+  left: -4%; /* push it to the left */
+  right: auto;
+  opacity: 1;
+  filter: blur(2px);
+  transform: scale(0.8);
+  z-index: 2;
+}
+
+.custom-slide.next {
+  left: auto;
+  right: -4%; /* push it to the right */
+   opacity: 1;
+  filter: blur(2px);
+  transform: scale(0.8);
+  z-index: 2;
+} 
+
+
+.dynamic-hexagon-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 320px;
+  width: 220px;
+  clip-path: polygon(50% 0, 100% 27%, 100% 73%, 50% 100%, 0 73%, 0 28%);
+  transform: translate(-50%, -30%); /* Start higher */
+  opacity: 0;
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.dynamic-hexagon-1 img {
+  position: absolute;
+  z-index: 15;
+  pointer-events: none;
+  object-fit: contain;
+  opacity: 1;
+  mix-blend-mode: luminosity;
+}
+
+.dynamic-hexagon-1::before,
+.dynamic-hexagon-1::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: #96CEE6;
+  top: 0%;
+  left: 10%;
+  mix-blend-mode: overlay;
+  opacity: 0.7;
+  scale: 1.5;
+}
+
+.dynamic-hexagon-1.visible {
+  opacity: 1;
+  transform: translate(-50%, -70%) scale(1); /* animate up slightly into place */
+}
+
+
+.hexagon-base.glow {
+  box-shadow: 0 0 25px 10px rgba(0, 0, 139, 0.6); /* dark blue glow */
+  border-radius: 12px; /* tweak if needed depending on shape */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+
+/* Custom glow effect */
+.hexagon-group-container.active .hexagon-base {
+  filter: invert(10%) sepia(95%) saturate(2118%) hue-rotate(160deg) brightness(45%) contrast(300%);
+  font-weight: bold;
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+
+.hexagon-group-container .hexagon-base {
+  transition: all 0.3s ease;
+}
+
+
