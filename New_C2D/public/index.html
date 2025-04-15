@@ -1049,7 +1049,10 @@
           handleScroll(); // Ensure correct highlighting after resizing
         });
 
-        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", () =>{
+          circlePositions = getCirclePositions();
+          handleScroll();
+        });
 
         setTimeout(() => {
           circlePositions = getCirclePositions();
