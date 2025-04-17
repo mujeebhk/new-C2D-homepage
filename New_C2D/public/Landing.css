@@ -1421,7 +1421,7 @@ nav {
 
 .custom-carousel-wrapper {
   position: relative;
-  width: 1000px; /* was 600px */
+  width: 870px; /* was 600px */
   max-width: 200vw; /* keeps it responsive */
   overflow: hidden;
   padding: 0 80px; /* Add padding to create space for buttons */
