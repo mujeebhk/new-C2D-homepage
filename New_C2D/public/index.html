@@ -1420,87 +1420,93 @@
         onScroll();
       });
 
-
-
-
       document.addEventListener("DOMContentLoaded", () => {
         const scrollLine = document.querySelector(".scroll-line-2");
         const middleLine = document.querySelector(".middle-line-3");
         const centerCircles = document.querySelectorAll(".center-circle-2");
-
+        
         const scrollLineHeight = 70; // Height of the scroll-line
         let circlePositions = [];
 
+        // Function to get all positions
         const getCirclePositions = () => {
-          return Array.from(centerCircles).map((circle) => {
-            const rect = circle.getBoundingClientRect();
-            return {
-              top: rect.top + window.scrollY, // Top of the circle
-              bottom: rect.bottom + window.scrollY, // Bottom of the circle
-              element: circle,
-              button: circle.parentElement.querySelector("a"), // Select <a> (about-us-button)
-            };
-          });
+          const middleLineRect = middleLine.getBoundingClientRect();
+          const middleLineTop = middleLineRect.top + window.pageYOffset;
+          const middleLineHeight = middleLineRect.height;
+
+          return {
+            middleLineTop,
+            middleLineHeight,
+            circles: Array.from(centerCircles).map((circle) => {
+              const rect = circle.getBoundingClientRect();
+              return {
+                top: rect.top + window.pageYOffset,
+                bottom: rect.bottom + window.pageYOffset,
+                element: circle,
+                button: circle.parentElement.querySelector("a"),
+              };
+            })
+          };
         };
 
-        const handleScroll = () => {
-          requestAnimationFrame(() => {
-            const scrollY = window.scrollY + window.innerHeight / 2;
-            const middleLineTop = middleLine.getBoundingClientRect().top + window.scrollY - (window.innerHeight * 0.15);
-            const middleLineHeight = middleLine.offsetHeight || 400; // Default height if undefined
+        // Main highlight function
+        const updateHighlight = () => {
+          const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+          const viewportCenter = scrollY + window.innerHeight / 2;
+          
+          const { middleLineTop, middleLineHeight, circles } = getCirclePositions();
+          
+          // Calculate scroll line position
+          let scrollLinePos = viewportCenter - middleLineTop;
+          scrollLinePos = Math.max(0, Math.min(scrollLinePos, middleLineHeight - scrollLineHeight));
+          scrollLine.style.transform = `translateY(${scrollLinePos}px)`;
+          
+          const scrollLineTop = scrollLinePos + middleLineTop;
+          const scrollLineBottom = scrollLineTop + scrollLineHeight;
 
-            let newScrollLinePosition = Math.min(
-              Math.max(scrollY - middleLineTop, 0),
-              middleLineHeight - scrollLineHeight
-            );
-            scrollLine.style.transform = `translateY(${newScrollLinePosition}px)`;
+          // Reset all highlights
+          centerCircles.forEach(circle => circle.classList.remove("highlight"));
+          document.querySelectorAll("a.about-us-button").forEach(btn => {
+            btn.classList.remove("button-highlight");
+            btn.style.transform = "scale(1)";
+            btn.style.backgroundColor = "#5089ba";
+          });
 
-            const scrollLineTop = newScrollLinePosition + middleLineTop;
-            const scrollLineBottom = scrollLineTop + scrollLineHeight;
-
-            let activeCircle = null;
-            let activeButton = null;
-
-            circlePositions.forEach(({ top, bottom, element, button }) => {
-              const isHighlighted = scrollLineBottom > top && scrollLineTop < bottom;
-
-              if (isHighlighted) {
-                activeCircle = element;
-                activeButton = button;
+          // Find and highlight active circle
+          circles.forEach(({ top, bottom, element, button }) => {
+            const circleCenter = (top + bottom) / 2;
+            if (circleCenter >= scrollLineTop && circleCenter <= scrollLineBottom) {
+              element.classList.add("highlight");
+              if (button) {
+                button.classList.add("button-highlight");
+                button.style.transform = "scale(1.1)";
+                button.style.backgroundColor = "#0a2262";
               }
-            });
-
-            centerCircles.forEach((circle) => circle.classList.remove("highlight"));
-            document.querySelectorAll("a.about-us-button").forEach((btn) => {
-              btn.classList.remove("button-highlight");
-              btn.style.transform = "scale(1)";
-              btn.style.backgroundColor = "#5089ba"; // Reset button color
-            });
-
-            if (activeCircle) {
-              activeCircle.classList.add("highlight");
-            }
-
-            if (activeButton) {
-              activeButton.classList.add("button-highlight");
-              activeButton.style.transform = "scale(1.1)";
-              activeButton.style.backgroundColor = "#0a2262"; // Highlighted button color
             }
           });
         };
 
-        window.addEventListener("resize", () => {
-          circlePositions = getCirclePositions();
-          handleScroll(); // Ensure correct highlighting after resizing
-        });
+        // Initialize everything
+        const init = () => {
+          // Make sure middle line has height
+          if (middleLine.offsetHeight === 0) {
+            middleLine.style.height = "400px"; // Set default height if needed
+          }
+          
+          updateHighlight(); // Initial update
+        };
 
-        window.addEventListener("scroll", handleScroll);
+        // Event listeners
+        window.addEventListener("scroll", updateHighlight);
+        window.addEventListener("resize", updateHighlight);
 
-        setTimeout(() => {
-          circlePositions = getCirclePositions();
-          handleScroll();
-        }, 100); // Small delay to ensure accurate positioning
+        // Start after a small delay to ensure proper rendering
+        setTimeout(init, 100);
+        
+        // Also initialize when everything is fully loaded
+        window.addEventListener("load", init);
       });
+
 
       document.addEventListener("DOMContentLoaded", function () {
         const scrollBtn = document.getElementById("scrollUpBtn");

@@ -977,7 +977,7 @@ nav {
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.5s ease, transform 0.5s ease;
-  padding: 8% 10%;
+  padding: 2% 10% 8% 10%;
   box-sizing: border-box;
 }
 
